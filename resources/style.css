@@ -50,6 +50,7 @@ body {
   vertical-align: top;
   background-color: #fff;
   border-radius: 15px;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
 }
 
 .card img {
@@ -75,9 +76,20 @@ body {
 .card .button {
   display: inline-block;
   margin-top: 15px;
-  padding: 10px 15px;
-  background-color: #222;
+  line-height: 35px;
   color: #fff;
+  border-radius: 5px;
+  border-bottom: 5px solid #666;
+}
+
+.card .button:active {
+  margin-top: 20px;
+  border-bottom: 0;
+}
+
+.card span {
+  background-color: #222;
+  padding: 10px 15px;
   border-radius: 5px;
 }
 
