@@ -30,13 +30,12 @@ body {
 
 .container {
   display: inline-block;
-  margin: 50px auto;
+  margin: 0 auto;
 }
 
 .container h2 {
-  z-index: 100;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 120px 0 50px;
   font-size: 36px;
 }
 
@@ -58,6 +57,7 @@ a {
 /* bagian profil di sini */
 
 .profile {
+  margin-bottom: 50px;
   background-color: #f5f8fa;
   text-align: center;
 }
