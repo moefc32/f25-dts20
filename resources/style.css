@@ -5,7 +5,13 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
+}
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 /* bagian navigasi di sini */
@@ -22,6 +28,36 @@ body {
 /* bagian profil di sini */
 
 .profile {
+  background-color: #affaff;
+  text-align: center;
+}
+
+.base {
+  display: inline-block;
+  width: 30%;
+  padding: 15px;
+}
+
+.card {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.card img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.card h3 {
+
+}
+
+.card .about {
+  color: #888;
+}
+
+.card .testimonial {
 
 }
 
