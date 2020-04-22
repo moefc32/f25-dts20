@@ -1,17 +1,29 @@
 /* bagian umum di sini */
 
 * {
-
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none !important;
 }
 
 body {
   margin: 0;
   padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.618em;
+	color: #424242;
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+
+.container h2 {
+  margin: 0 auto;
+  padding: 30px;
+  font-size: 30px;
 }
 
 /* bagian navigasi di sini */
@@ -28,7 +40,7 @@ body {
 /* bagian profil di sini */
 
 .profile {
-  background-color: #affaff;
+  background-color: #f5f8fa;
   text-align: center;
 }
 
@@ -39,26 +51,40 @@ body {
 }
 
 .card {
-  padding: 15px;
+  display: inline-block;
+  padding: 30px;
+  vertical-align: top;
   background-color: #fff;
   border-radius: 15px;
 }
 
 .card img {
-  width: 50%;
+  width: 80%;
+  max-width: 200px;
   border-radius: 50%;
 }
 
 .card h3 {
-
+  margin: 15px 0 5px;
 }
 
 .card .about {
+  margin: 0;
   color: #888;
+  line-height: 1em;
 }
 
 .card .testimonial {
+  font-style: italic;
+}
 
+.card .button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 5px;
 }
 
 /* bagian call to action di sini */
