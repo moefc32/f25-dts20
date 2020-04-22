@@ -1,11 +1,24 @@
 /* bagian umum di sini */
 
 * {
-
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none !important;
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.618em;
+  color: #424242;
+}
 
+.container h2 {
+  margin: 0 auto;
+  padding: 30px;
+  font-size: 30px;
 }
 
 /* bagian navigasi di sini */
@@ -22,7 +35,50 @@ body {
 /* bagian profil di sini */
 
 .profile {
+  background-color: #f5f8fa;
+  text-align: center;
+}
 
+.base {
+  display: inline-block;
+  padding: 15px;
+}
+
+.card {
+  display: inline-block;
+  padding: 30px;
+  vertical-align: top;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.card img {
+  width: 80%;
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+.card h3 {
+  margin: 15px 0 5px;
+}
+
+.card .about {
+  margin: 0;
+  color: #888;
+  line-height: 1em;
+}
+
+.card .testimonial {
+  font-style: italic;
+}
+
+.card .button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 5px;
 }
 
 /* bagian call to action di sini */
@@ -41,4 +97,31 @@ body {
 
 .footer {
 
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+    margin: 0 auto;
+  }
+
+  .base {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+
+  .base {
+    width: calc(33.33% - 30px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
