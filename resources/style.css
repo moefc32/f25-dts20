@@ -57,7 +57,7 @@ a {
 /* bagian profil di sini */
 
 .profile {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   background-color: #f5f8fa;
   text-align: center;
 }
