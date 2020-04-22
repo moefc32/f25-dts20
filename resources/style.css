@@ -1,23 +1,18 @@
 /* bagian umum di sini */
 
 * {
-	box-sizing: border-box;
-	text-decoration: none;
-	outline: none !important;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none !important;
 }
 
 body {
   margin: 0;
   padding: 0;
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	line-height: 1.618em;
-	color: #424242;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.618em;
+  color: #424242;
 }
 
 .container h2 {
@@ -46,7 +41,6 @@ body {
 
 .base {
   display: inline-block;
-  width: 30%;
   padding: 15px;
 }
 
@@ -103,4 +97,31 @@ body {
 
 .footer {
 
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+    margin: 0 auto;
+  }
+
+  .base {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+
+  .base {
+    width: calc(33.33% - 30px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
