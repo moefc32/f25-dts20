@@ -45,41 +45,55 @@ a {
 
 /* bagian navigasi di sini */
 
-.nav {
+header {
  position: fixed;
  top: 0;
  z-index: 100;
- padding-left: 30px;
  width: 100%;
- line-height: 70px;
+ height: 75px;
  background-color: rgba(34, 49, 52, 0.9);
 }
 
-.nav h2 {
- margin: 0;
- padding: 0;
+.header-left h2 {
+ padding: 0px;
  color: #fff;
- font-size: 20px;
+ font-size: 30px;
+ margin-left: 30px;
+ margin-top: 25px;
+ margin-bottom: 25px;
+
 }
 
 .header-left {
  float: left;
 }
 
-.header-right {
- float: right;
- background-color: rgba(255, 255, 255, 0.3);
-}
-
-.header-right:hover {
- background-color: rgba(255, 255, 255, 0.5);
-}
-
-.header-right a {
- display: block;
- padding: 0 25px;
- line-height: 70px;
+.header-right a{
  color: white;
+ line-height: 75px;
+ display; block;
+}
+
+.header-right{
+  margin-right: 5px;
+}
+
+ul{
+  margin:auto;
+  padding:0;
+}
+
+li{
+  list-style: none;
+  float: right;
+  padding: 0px 10px;
+  margin:0px 5px;
+  background-color: rgba(255,255,255,0.5);
+  display:block;
+}
+
+li:hover {
+ background-color: rgba(255,255,255,0.3);
 }
 /* bagian landing di sini */
 
