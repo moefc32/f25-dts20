@@ -67,7 +67,7 @@ a {
 }
 
 .header-right {
-/*  position: relative; */
+  /*  position: relative; */
   float: right;
   text-align: right;
 }
@@ -85,19 +85,31 @@ a {
   -webkit-touch-callout: none;
 }
 
+.header-right input:checked ~ .scroll {
+  top: 70px;
+  left: 0;
+}
+
 .header-right .hamburger {
   margin-right: 30px;
   font-size: 1.5em;
 }
 
-.header-right ul {
+.header-right .scroll {
+  position: absolute;
+  top: -210px;
+  left: 0;
+  width: 100vw;
   margin: 0;
   padding: 0;
   list-style: none;
+  transition: .25s all;
+  background-color: rgba(34, 49, 52, 0.9);
+  border-top: solid 1px #888;
 }
 
 .header-right a {
-  display: inline-block;
+  display: block;
   margin: 0;
   padding: 0 25px;
   line-height: 70px;
@@ -235,27 +247,6 @@ a {
 
 }
 
-@media (max-width: 767px) {
-  .header-right .scroll {
-    position: absolute;
-    z-index: 20;
-    top: -210px;
-    left: 0;
-    width: 100vw;
-    transition: .25s all;
-    background-color: rgba(34, 49, 52, 0.9);
-    border-top: solid 1px #888;
-  }
-
-  .header-right input:checked ~ .scroll {
-    top: 70px;
-  }
-
-  .header-right a {
-    display: block;
-  }
-}
-
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -263,6 +254,19 @@ a {
 
   .mobile-only {
     display: none !important;
+  }
+
+  .header-right .scroll {
+    position: static;
+    top: -210px;
+    left: 0;
+    width: auto;
+    background: none;
+    border: none;
+  }
+
+  .header-right a {
+    display: inline-block;
   }
 
   .base {
