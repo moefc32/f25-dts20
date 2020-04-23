@@ -43,21 +43,23 @@ a {
   transition: .25s;
 }
 
-
 /* bagian navigasi di sini */
 
-.nav{
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
+.nav {
   position:fixed;
   top:0;
-  z-index:10;
+  z-index:100;
+  padding: 0 15px;
+  width: 100%;
+  line-height: 70px;
+  background-color: rgba(34, 49, 52, 0.9);
 }
 
-.logo {
-  width: 124px;
-  margin-top: 20px;
+.nav h2 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 20px;
 }
 
 .header-left {
@@ -67,11 +69,6 @@ a {
 .header-right {
   float: right;
   background-color: rgba(255, 255, 255, 0.3);
-  transition: all 0.5s;
-}
-
-.header-right h2{
-  color: blue;
 }
 
 .header-right:hover {
@@ -79,10 +76,10 @@ a {
 }
 
 .header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
   display: block;
+  padding: 0 25px;
+  line-height: 70px;
+  color: white;
 }
 
 /* bagian landing di sini */
