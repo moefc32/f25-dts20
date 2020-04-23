@@ -90,8 +90,76 @@ a {
 
 /* bagian lesson di sini */
 
-.lesson {
-
+.detailbelajar {
+  padding-bottom: 50px;
+  text-align: center;
+  height: auto;
+  width: 1195px;
+  padding : 50px 75px 75px 75px;
+  background-color: white;
+  background-size: cover;
+}
+.detailbelajar-wrapper {
+  width: 100%;
+  height: auto;
+  border: 1px solid #00a8ff;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 10px;
+  background-color: #dcdde1;
+}
+.detailbelajar-heading h2 {
+  color: black;
+  font-family: "Courier New";
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 20px;
+}
+.induk-kategori{
+  display: inline-block;
+}
+.kategori {
+  position: relative;
+  width: 300px;
+  border: 1px solid #00a8ff;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 10px;
+  margin: 20px;
+  float: left;
+}
+.judul-kategori {
+  color: black;
+  font-family: "Courier New";
+  font-size: 30px;
+  margin-top: 30px;
+}
+.judul-kategori p {
+  margin: 0px;
+  margin-bottom: 15px;
+}
+.image-kategori {
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+}
+.konten1-kategori {
+  margin: 10px;
+  height: 220px;
+}
+.konten-kategori {
+  color: black;
+  font-family: "Courier New";
+  font-size: 15px;
+  margin: 10px;
+}
+.kategori1{
+  background-color: #ff4d4d;
+}
+.kategori2{
+  background-color: #32ff7e;
+}
+.kategori3{
+  background-color: #18dcff;
 }
 
 /* bagian profil di sini */
