@@ -46,6 +46,67 @@ a {
 /* bagian navigasi di sini */
 
 .nav {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  padding-left: 30px;
+  width: 100%;
+  line-height: 70px;
+  color: #fff;
+  background-color: rgba(34, 49, 52, 0.9);
+}
+
+.nav h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  position: relative;
+  float: right;
+}
+
+.header-right input {
+  position: absolute;
+  display: block;
+  width: 1.75em;
+  height: 1.75em;
+  top: 15px;
+  left: 0;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 50;
+  -webkit-touch-callout: none;
+}
+
+.header-right .hamburger {
+  font-size: 1.5em;
+}
+
+.header-right ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-right a {
+  display: inline-block;
+  margin: 0;
+  padding: 0 25px;
+  line-height: 70px;
+  color: #fff;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#menuToggle {
 
 }
 
