@@ -136,7 +136,7 @@ a {
 
 /* bagian profil di sini */
 
-.profile {
+#profile {
   padding-bottom: 50px;
   background-color: #f5f8fa;
   text-align: center;
@@ -226,7 +226,7 @@ a {
 
 /* bagian portfolio di sini */
 
-.portfolio {
+#portfolio {
 
 }
 
@@ -238,7 +238,7 @@ a {
 
 /* bagian organizer di sini */
 
-.organizer {
+#organizer {
 
 }
 
