@@ -67,8 +67,9 @@ a {
 }
 
 .header-right {
-  position: relative;
+/*  position: relative; */
   float: right;
+  text-align: right;
 }
 
 .header-right input {
@@ -77,7 +78,7 @@ a {
   width: 1.75em;
   height: 1.75em;
   top: 15px;
-  left: 0;
+  right: 30px;
   cursor: pointer;
   opacity: 0;
   z-index: 50;
@@ -85,6 +86,7 @@ a {
 }
 
 .header-right .hamburger {
+  margin-right: 30px;
   font-size: 1.5em;
 }
 
@@ -99,15 +101,12 @@ a {
   margin: 0;
   padding: 0 25px;
   line-height: 70px;
+  text-align: left;
   color: #fff;
 }
 
 .header-right a:hover {
   background-color: rgba(255, 255, 255, 0.5);
-}
-
-#menuToggle {
-
 }
 
 /* bagian landing di sini */
@@ -236,9 +235,34 @@ a {
 
 }
 
+@media (max-width: 767px) {
+  .header-right .scroll {
+    position: absolute;
+    z-index: 20;
+    top: -210px;
+    left: 0;
+    width: 100vw;
+    transition: .25s all;
+    background-color: rgba(34, 49, 52, 0.9);
+    border-top: solid 1px #888;
+  }
+
+  .header-right input:checked ~ .scroll {
+    top: 70px;
+  }
+
+  .header-right a {
+    display: block;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
+  }
+
+  .mobile-only {
+    display: none !important;
   }
 
   .base {
