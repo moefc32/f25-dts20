@@ -66,6 +66,10 @@ a {
   float: left;
 }
 
+.header-left a {
+  color: #fff;
+}
+
 .header-right {
   /*  position: relative; */
   float: right;
