@@ -71,7 +71,7 @@ a {
  background-color: rgba(255, 255, 255, 0.3);
 }
 
-.header-right: hover {
+.header-right:hover {
  background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -123,7 +123,7 @@ a {
  filter: grayscale(100%);
 }
 
-.card: hover img {
+.card:hover img {
  filter: grayscale(0%);
  transition: .15s;
  animation: shake 5s infinite;
@@ -156,11 +156,11 @@ a {
  transition: .15s;
 }
 
-.card .button: hover {
+.card .button:hover {
  background-color: #444;
 }
 
-.card .button: active {
+.card .button:active {
  margin: 20px 0 10px;
  box-shadow: none;
 }
@@ -180,7 +180,7 @@ a {
  color: #444;
 }
 
-.card .medsos a: hover {
+.card .medsos a:hover {
  color: #2196f3;
 }
 
