@@ -46,45 +46,28 @@ a {
 
 /* bagian navigasi di sini */
 
-.nav{
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  position:fixed;
-  top:0;
-  z-index:10;
+header{
+  height:50px;
+  width:100%;
+  background-color: rgba(255, 0, 0, 0.5);
 }
 
-.logo {
-  width: 124px;
-  margin-top: 20px;
-}
-
-.header-left {
+.header-left{
   float: left;
 }
 
-.header-right {
-  float: right;
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: all 0.5s;
-}
-
-.header-right h2{
+.header-left h3{
+  height:50px;
+  margin-top: 50px;
+  font-size: normal;
   color: blue;
+  background-color: rgba(25, 90, 110, 0.8);
 }
 
-.header-right:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+.header-right{
+  float: right;
+  widht: 33.333%
 }
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-}
-
 /* bagian landing di sini */
 
 .landing {
