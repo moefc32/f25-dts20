@@ -54,6 +54,13 @@ a {
 .landing {
 
 }
+
+/* bagian lesson di sini */
+
+.lesson {
+
+}
+
 /* bagian profil di sini */
 
 .profile {
@@ -144,15 +151,21 @@ a {
   color: #2196f3;
 }
 
+/* bagian portfolio di sini */
+
+.portfolio {
+
+}
+
 /* bagian call to action di sini */
 
 .cta {
 
 }
 
-/* bagian penyelenggara di sini */
+/* bagian organizer di sini */
 
-.penyelenggara {
+.organizer {
 
 }
 
