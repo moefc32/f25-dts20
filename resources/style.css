@@ -1,51 +1,68 @@
 /* bagian umum di sini */
 
 @keyframes shake {
- 10% { transform: translate(-4px, -8px) rotate(-.5deg); }
- 20% { transform: translate(7px, 2px) rotate(-2.5deg); }
- 30% { transform: translate(-5px, -2px) rotate(2.5deg); }
- 40% { transform: translate(-4px, -2px) rotate(.5deg); }
- 50% { transform: translate(4px, -1px) rotate(-2.5deg); }
- 60% { transform: translate(1px, -6px) rotate(3.5deg); }
- 70% { transform: translate(-6px, 7px) rotate(.5deg); }
- 80% { transform: translate(2px, 1px) rotate(1.5deg); }
- 90% { transform: translate(7px, 6px) rotate(-2.5deg); }
- 0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  10% { transform: translate(-4px, -8px) rotate(-.5deg); }
+  20% { transform: translate(7px, 2px) rotate(-2.5deg); }
+  30% { transform: translate(-5px, -2px) rotate(2.5deg); }
+  40% { transform: translate(-4px, -2px) rotate(.5deg); }
+  50% { transform: translate(4px, -1px) rotate(-2.5deg); }
+  60% { transform: translate(1px, -6px) rotate(3.5deg); }
+  70% { transform: translate(-6px, 7px) rotate(.5deg); }
+  80% { transform: translate(2px, 1px) rotate(1.5deg); }
+  90% { transform: translate(7px, 6px) rotate(-2.5deg); }
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
 }
 
 * {
- box-sizing: border-box;
- text-decoration: none;
- outline: none !important;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none !important;
 }
 
 body {
- margin: 0;
- padding: 0;
- font-family: 'Lato', sans-serif;
- font-size: 16px;
- line-height: 1.618em;
- color: #424242;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.618em;
+  color: #424242;
 }
 
 .container {
- display: inline-block;
- margin: 0 auto;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .container h2 {
- margin: 0 auto;
- padding: 120px 0 50px;
- font-size: 36px;
+  margin: 0 auto;
+  padding: 120px 0 50px;
+  font-size: 36px;
 }
 
 a {
- transition: .25s;
+  transition: .25s all;
 }
 
 /* bagian navigasi di sini */
 
-header {
+.nav {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  padding-left: 30px;
+  width: 100%;
+  line-height: 70px;
+  color: #fff;
+  background-color: rgba(34, 49, 52, 0.9);
+}
+
+.nav h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+/* header {
  position: fixed;
  top: 0;
  z-index: 100;
@@ -61,13 +78,72 @@ header {
  margin-left: 30px;
  margin-top: 25px;
  margin-bottom: 25px;
-
-}
+} */
 
 .header-left {
- float: left;
+  float: left;
 }
 
+.header-left a {
+  color: #fff;
+}
+
+.header-right {
+  float: right;
+  text-align: right;
+}
+
+.header-right input {
+  position: absolute;
+  display: block;
+  width: 1.75em;
+  height: 1.75em;
+  top: 15px;
+  right: 30px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 50;
+  -webkit-touch-callout: none;
+}
+
+.header-right input:checked ~ .scroll {
+  top: 70px;
+  left: 0;
+}
+
+.header-right .hamburger {
+  margin-right: 30px;
+  font-size: 1.5em;
+}
+
+.header-right .scroll {
+  position: absolute;
+  top: -210px;
+  left: 0;
+  z-index: 20;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: .25s all;
+  background-color: rgba(34, 49, 52, 0.9);
+  border-top: solid 1px #888;
+}
+
+.header-right a {
+  display: block;
+  margin: 0;
+  padding: 0 25px;
+  line-height: 70px;
+  text-align: left;
+  color: #fff;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*
 .header-right a{
  color: white;
  line-height: 75px;
@@ -81,7 +157,7 @@ header {
 ul{
   margin:auto;
   padding:0;
-}
+} */
 
 li{
   list-style: none;
@@ -97,112 +173,290 @@ li:hover {
 /* bagian landing di sini */
 
 .landing {
-  padding: 300px 0 300px 0;
+  padding: 120px 40px 40px 40px;
+  text-align: center;
+  height: auto;
+  width: 100%;
+  background-color: #f5f8fa;
+}
+
+.landing-wrapper {
+  width: 100%;
+  height: 650px;
+}
+
+.landing-heading h2 {
+  color: #82ccdd;
+  margin: 0 0 50px 0;
+  font-family: "Courier New";
+  font-size: 60px;
+  text-shadow: 0 0 50px white,5px 5px 5px black;
+  font-weight: bold;
+}
+
+.landing-kategori {
+  position: relative;
+  width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+}
+
+.landing2-kategori {
+  float: left;
+}
+
+.landing2-kategori2 {
+  float: right;
+}
+
+.lkategori-gambar {
+  position: relative;
+}
+
+.lkategori-gambar img {
+  width: 450px;
+  height: 450px;
+  opacity: 0.8;
+  border: 1px solid #00a8ff;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 10px;
+  margin: 0px 60px 55px 60px;
+}
+
+.judul-lkategori {
+  color: #82ccdd;
+  position: absolute;
+  top: 40px;
+  font-family: "Courier New";
+  font-size: 30px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-weight: bold;
+  width: 100%;
+}
+
+.judul-lkategori p {
+  margin: 40px 0 0 0;
+}
+
+.konten-lkategori {
+  color: white;
+  position: absolute;
+  top: 150px;
+  font-family: "Courier New";
+  font-size: 15px;
+  text-shadow: -1px 0 #192a56;
+  font-weight: bold;
+  width: 570px;
+  padding: 0px 80px;
+}
+
+.tbl-gambar {
+  font-family: "Courier New";
+  padding: 15px 40px;
+  color: #192a56;
+  background-color: #82ccdd;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 10px 10px 5px #273c75;
+  font-weight: bold;
+}
+
+.tbl-gambar:active {
+  position: relative;
+  top: 10px;
+  box-shadow: none;
+  border-radius: 4px;
+  color: #192a56;
+  background-color: #82ccdd;
+  font-weight: bold;
+/*  padding: 300px 0 300px 0;
   background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
   background-size: cover;
   color: white;
-  text-align: center;
+  text-align: center; */
 }
 
 /* bagian lesson di sini */
 
-.lesson {
+.detailbelajar {
+  padding-bottom: 50px;
+  text-align: center;
+  height: auto;
+  width: 100%;
+  padding : 50px 75px 75px 75px;
+  background-color: white;
+  background-size: cover;
+}
 
+.detailbelajar-wrapper {
+  width: 1195px;
+  height: auto;
+  border: 1px solid #00a8ff;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 10px;
+  background-color: #dcdde1;
+}
+
+.detailbelajar-heading h2 {
+  color: black;
+  font-family: "Courier New";
+  font-size: 60px;
+  font-weight: bold;
+  margin: 40px 0px 20px 0px;
+}
+
+.induk-kategori{
+  display: inline-block;
+}
+
+.kategori {
+  position: relative;
+  width: 300px;
+  border: 1px solid #00a8ff;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 10px;
+  margin: 20px;
+  float: left;
+}
+
+.judul-kategori {
+  color: black;
+  font-family: "Courier New";
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.judul-kategori p {
+  margin: 0px;
+  margin-bottom: 15px;
+}
+
+.image-kategori {
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+}
+
+.konten1-kategori {
+  margin: 10px;
+  height: 320px;
+}
+
+.konten-kategori {
+  color: black;
+  font-family: "Courier New";
+  font-size: 15px;
+  margin: 10px;
+}
+
+.kategori1{
+  background-color: #ff4d4d;
+}
+
+.kategori2{
+  background-color: #32ff7e;
+}
+
+.kategori3{
+  background-color: #18dcff;
 }
 
 /* bagian profil di sini */
 
-.profile {
- padding-bottom: 50px;
- background-color: #f5f8fa;
- text-align: center;
+#profile {
+  padding-bottom: 50px;
+  background-color: #f5f8fa;
+  text-align: center;
 }
-
+.container h2{
+  padding: 50px 0;
+}
 .base {
- display: inline-block;
- padding: 15px;
+  display: inline-block;
+  padding: 15px;
 }
 
 .card {
- display: inline-block;
- padding: 30px;
- vertical-align: top;
- background-color: #fff;
- border-radius: 15px;
- box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
+  display: inline-block;
+  padding: 30px;
+  vertical-align: top;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
 }
 
 .card img {
- width: 80%;
- max-width: 150px;
- border-radius: 50%;
- filter: grayscale(100%);
+  width: 80%;
+  max-width: 150px;
+  border-radius: 50%;
+  filter: grayscale(100%);
 }
 
 .card:hover img {
- filter: grayscale(0%);
- transition: .15s;
- animation: shake 5s infinite;
+  filter: grayscale(0%);
+  transition: .15s all;
+  animation: shake 5s infinite;
 }
 
 .card h3 {
- margin: 15px 0 5px;
- font-size: 1.2em;
+  margin: 15px 0 5px;
+  font-size: 1.2em;
 }
 
 .card .about {
- margin: 0;
- color: #888;
- line-height: 1em;
+  margin: 0;
+  color: #888;
+  line-height: 1em;
 }
 
 .card .testimonial {
- font-style: italic;
+  font-style: italic;
 }
 
 .card .button {
- display: inline-block;
- margin: 15px 0 15px;
- padding: 5px 15px;
- line-height: 35px;
- background-color: #222;
- color: #fff;
- border-radius: 5px;
- box-shadow: 0 5px #666;
- transition: .15s;
+  display: inline-block;
+  margin: 15px 0 15px;
+  padding: 5px 15px;
+  line-height: 35px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px #666;
+  transition: .15s all;
 }
 
 .card .button:hover {
- background-color: #444;
+  background-color: #444;
 }
 
 .card .button:active {
- margin: 20px 0 10px;
- box-shadow: none;
+  margin: 20px 0 10px;
+  box-shadow: none;
 }
 
 .card .medsos {
- display: inline-block;
- margin: 23px 0 0 15px;
- padding: 0 15px;
- text-align: right;
- vertical-align: top;
- font-size: 1.2em;
- line-height: 35px;
- border-left: solid 1px #ccc;
+  display: inline-block;
+  margin: 23px 0 0 15px;
+  padding: 0 15px;
+  text-align: right;
+  vertical-align: top;
+  font-size: 1.2em;
+  line-height: 35px;
+  border-left: solid 1px #ccc;
 }
 
 .card .medsos a {
- color: #444;
+  color: #444;
 }
 
 .card .medsos a:hover {
- color: #2196f3;
+  color: #2196f3;
 }
 
 /* bagian portfolio di sini */
 
-.portfolio {
+#portfolio {
 
 }
 
@@ -214,7 +468,7 @@ li:hover {
 
 /* bagian organizer di sini */
 
-.organizer {
+#organizer {
 
 }
 
@@ -225,23 +479,40 @@ li:hover {
 }
 
 @media (min-width: 768px) {
- .container {
- width: 750px;
- }
+  .container {
+    width: 750px;
+  }
 
- .base {
- width: 360px;
- }
+  .mobile-only {
+    display: none !important;
+  }
+
+  .header-right .scroll {
+    position: static;
+    top: -210px;
+    left: 0;
+    width: auto;
+    background: none;
+    border: none;
+  }
+
+  .header-right a {
+    display: inline-block;
+  }
+
+  .base {
+    width: 360px;
+  }
 }
 
 @media (min-width: 992px) {
- .container {
- width: 970px;
- }
+  .container {
+    width: 970px;
+  }
 }
 
 @media (min-width: 1200px) {
- .container {
- width: 1170px;
- }
+  .container {
+    width: 1170px;
+  }
 }
