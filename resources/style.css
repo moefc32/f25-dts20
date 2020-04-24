@@ -76,6 +76,7 @@ a {
 }
 
 .header-right {
+  /*  position: relative; */
   float: right;
   text-align: right;
 }
@@ -128,12 +129,6 @@ a {
 
 .header-right a:hover {
   background-color: rgba(255, 255, 255, 0.5);
-}
-
-li {
-  list-style: none;
-  float: right;
-  display:block;
 }
 
 /* bagian landing di sini */
