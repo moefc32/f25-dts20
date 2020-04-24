@@ -1,46 +1,55 @@
 /* bagian umum di sini */
 
 @keyframes shake {
- 10% { transform: translate(-4px, -8px) rotate(-.5deg); }
- 20% { transform: translate(7px, 2px) rotate(-2.5deg); }
- 30% { transform: translate(-5px, -2px) rotate(2.5deg); }
- 40% { transform: translate(-4px, -2px) rotate(.5deg); }
- 50% { transform: translate(4px, -1px) rotate(-2.5deg); }
- 60% { transform: translate(1px, -6px) rotate(3.5deg); }
- 70% { transform: translate(-6px, 7px) rotate(.5deg); }
- 80% { transform: translate(2px, 1px) rotate(1.5deg); }
- 90% { transform: translate(7px, 6px) rotate(-2.5deg); }
- 0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  10% { transform: translate(-4px, -8px) rotate(-.5deg); }
+  20% { transform: translate(7px, 2px) rotate(-2.5deg); }
+  30% { transform: translate(-5px, -2px) rotate(2.5deg); }
+  40% { transform: translate(-4px, -2px) rotate(.5deg); }
+  50% { transform: translate(4px, -1px) rotate(-2.5deg); }
+  60% { transform: translate(1px, -6px) rotate(3.5deg); }
+  70% { transform: translate(-6px, 7px) rotate(.5deg); }
+  80% { transform: translate(2px, 1px) rotate(1.5deg); }
+  90% { transform: translate(7px, 6px) rotate(-2.5deg); }
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
 }
 
 * {
- box-sizing: border-box;
- text-decoration: none;
- outline: none !important;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
- margin: 0;
- padding: 0;
- font-family: 'Lato', sans-serif;
- font-size: 16px;
- line-height: 1.618em;
- color: #424242;
-}
-
-.container {
- display: inline-block;
- margin: 0 auto;
-}
-
-.container h2 {
- margin: 0 auto;
- padding: 120px 0 50px;
- font-size: 36px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.618em;
+  color: #424242;
 }
 
 a {
   transition: .25s all;
+}
+
+.container {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.container h2 {
+  margin: 0 auto;
+  padding: 120px 0 50px;
+  font-size: 2.5em;
+}
+
+.base {
+  display: inline-block;
+  padding: 15px;
 }
 
 /* bagian navigasi di sini */
@@ -71,7 +80,6 @@ a {
 }
 
 .header-right {
-  /*  position: relative; */
   float: right;
   text-align: right;
 }
@@ -128,67 +136,113 @@ a {
 
 /* bagian landing di sini */
 
-.landing {
+#landing {
 
 }
 
 /* bagian lesson di sini */
 
-.lesson {
+#lesson {
+  background-color: #eceff1;
+  text-align: center;
+}
 
+#lesson .over {
+  margin-top: -50px;
+  padding: 30px 0;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
+}
+
+#lesson h2 {
+  padding: 0 0 30px;
+  font-size: 1.75em;
+}
+
+#lesson .fa-fw {
+  font-size: 90px;
+  line-height: 100px;
+  transition: .25s all;
+}
+
+#lesson .html {
+  background-color: #f06529;
+  color: #fff;
+}
+
+#lesson .css {
+  background-color: #2965f1;
+  color: #fff;
+}
+
+#lesson .js {
+  background-color: #f0db4f;
+  color: #424242;
+}
+
+#lesson .html,
+#lesson .css,
+#lesson .js {
+  display: inline-block;
+  padding: 30px;
+  vertical-align: top;
+  border-radius: 15px;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
+}
+
+#lesson .html:hover .fa-fw,
+#lesson .css:hover .fa-fw,
+#lesson .js:hover .fa-fw {
+  font-size: 100px;
 }
 
 /* bagian profil di sini */
 
 #profile {
   padding-bottom: 50px;
-  background-color: #f5f8fa;
+  background-color: #eceff1;
   text-align: center;
 }
 
-.base {
- display: inline-block;
- padding: 15px;
+#profile .card {
+  display: inline-block;
+  padding: 30px;
+  vertical-align: top;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
 }
 
-.card {
- display: inline-block;
- padding: 30px;
- vertical-align: top;
- background-color: #fff;
- border-radius: 15px;
- box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
-}
-
-.card img {
- width: 80%;
- max-width: 150px;
- border-radius: 50%;
- filter: grayscale(100%);
-}
-
-.card:hover img {
-  filter: grayscale(0%);
+#profile img {
+  width: 80%;
+  max-width: 150px;
+  border-radius: 50%;
+  filter: grayscale(100%);
   transition: .15s all;
+}
+
+#profile .card:hover img {
+  filter: grayscale(0%);
   animation: shake 5s infinite;
 }
 
-.card h3 {
- margin: 15px 0 5px;
- font-size: 1.2em;
+#profile h3 {
+  margin: 15px 0 5px;
+  font-size: 1.2em;
 }
 
-.card .about {
- margin: 0;
- color: #888;
- line-height: 1em;
+#profile .about {
+  margin: 0;
+  color: #888;
+  line-height: 1em;
 }
 
-.card .testimonial {
- font-style: italic;
+#profile .card .testimonial {
+  font-style: italic;
 }
 
-.card .button {
+#profile .button {
   display: inline-block;
   margin: 15px 0 15px;
   padding: 5px 15px;
@@ -200,32 +254,32 @@ a {
   transition: .15s all;
 }
 
-.card .button:hover {
- background-color: #444;
+#profile .card .button:hover {
+  background-color: #444;
 }
 
-.card .button:active {
- margin: 20px 0 10px;
- box-shadow: none;
+#profile .button:active {
+  margin: 20px 0 10px;
+  box-shadow: none;
 }
 
-.card .medsos {
- display: inline-block;
- margin: 23px 0 0 15px;
- padding: 0 15px;
- text-align: right;
- vertical-align: top;
- font-size: 1.2em;
- line-height: 35px;
- border-left: solid 1px #ccc;
+#profile .medsos {
+  display: inline-block;
+  margin: 23px 0 0 15px;
+  padding: 0 15px;
+  text-align: right;
+  vertical-align: top;
+  font-size: 1.2em;
+  line-height: 35px;
+  border-left: solid 1px #ccc;
 }
 
-.card .medsos a {
- color: #444;
+#profile .medsos a {
+  color: #444;
 }
 
-.card .medsos a:hover {
- color: #2196f3;
+#profile .medsos a:hover {
+  color: #2196f3;
 }
 
 /* bagian portfolio di sini */
@@ -253,9 +307,9 @@ a {
 }
 
 @media (min-width: 768px) {
- .container {
- width: 750px;
- }
+  .container {
+    width: 750px;
+  }
 
   .mobile-only {
     display: none !important;
@@ -277,16 +331,20 @@ a {
   .base {
     width: 360px;
   }
+
+  #landing {
+    height: calc(100vh + 70px);
+  }
 }
 
 @media (min-width: 992px) {
- .container {
- width: 970px;
- }
+  .container {
+    width: 970px;
+  }
 }
 
 @media (min-width: 1200px) {
- .container {
- width: 1170px;
- }
+  .container {
+    width: 1170px;
+  }
 }
