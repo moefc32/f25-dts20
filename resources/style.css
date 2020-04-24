@@ -71,7 +71,7 @@ header {
 .header-right a{
  color: white;
  line-height: 75px;
- display; block;
+ display; block !important;
 }
 
 .header-right{
@@ -97,7 +97,11 @@ li:hover {
 /* bagian landing di sini */
 
 .landing {
-
+  padding: 300px 0 300px 0;
+  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+  background-size: cover;
+  color: white;
+  text-align: center;
 }
 
 /* bagian lesson di sini */
