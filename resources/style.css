@@ -19,6 +19,10 @@
   outline: none !important;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -76,7 +80,6 @@ a {
 }
 
 .header-right {
-  /*  position: relative; */
   float: right;
   text-align: right;
 }
@@ -220,12 +223,12 @@ a {
 /* bagian lesson di sini */
 
 .lesson {
-  background-color: #f5f8fa;
+  background-color: #eceff1;
   text-align: center;
 }
 
 .lesson .over {
-  margin-top: -30px;
+  margin-top: -50px;
   padding: 30px 0;
   background-color: #fff;
   border-radius: 50px;
@@ -238,8 +241,9 @@ a {
 }
 
 .lesson .fa-fw {
-  font-size: 80px;
-  padding: 5px;
+  font-size: 90px;
+  line-height: 100px;
+  transition: .25s all;
 }
 
 .lesson .html {
@@ -267,15 +271,21 @@ a {
   box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
 }
 
+.lesson .html:hover .fa-fw,
+.lesson .css:hover .fa-fw,
+.lesson .js:hover .fa-fw {
+  font-size: 100px;
+}
+
 /* bagian profil di sini */
 
 #profile {
   padding-bottom: 50px;
-  background-color: #f5f8fa;
+  background-color: #eceff1;
   text-align: center;
 }
 
-.card {
+#profile .card {
   display: inline-block;
   padding: 30px;
   vertical-align: top;
@@ -284,35 +294,35 @@ a {
   box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
 }
 
-.card img {
+#profile img {
   width: 80%;
   max-width: 150px;
   border-radius: 50%;
   filter: grayscale(100%);
+  transition: .15s all;
 }
 
-.card:hover img {
+#profile .card:hover img {
   filter: grayscale(0%);
-  transition: .15s all;
   animation: shake 5s infinite;
 }
 
-.card h3 {
+#profile h3 {
   margin: 15px 0 5px;
   font-size: 1.2em;
 }
 
-.card .about {
+#profile .about {
   margin: 0;
   color: #888;
   line-height: 1em;
 }
 
-.card .testimonial {
+#profile .card .testimonial {
   font-style: italic;
 }
 
-.card .button {
+#profile .button {
   display: inline-block;
   margin: 15px 0 15px;
   padding: 5px 15px;
@@ -324,16 +334,16 @@ a {
   transition: .15s all;
 }
 
-.card .button:hover {
+#profile .card .button:hover {
   background-color: #444;
 }
 
-.card .button:active {
+#profile .button:active {
   margin: 20px 0 10px;
   box-shadow: none;
 }
 
-.card .medsos {
+#profile .medsos {
   display: inline-block;
   margin: 23px 0 0 15px;
   padding: 0 15px;
@@ -344,11 +354,11 @@ a {
   border-left: solid 1px #ccc;
 }
 
-.card .medsos a {
+#profile .medsos a {
   color: #444;
 }
 
-.card .medsos a:hover {
+#profile .medsos a:hover {
   color: #2196f3;
 }
 
