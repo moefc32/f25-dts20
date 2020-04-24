@@ -40,46 +40,90 @@ body {
 }
 
 a {
- transition: .25s;
+  transition: .25s all;
 }
 
 /* bagian navigasi di sini */
 
 .nav {
- position: fixed;
- top: 0;
- z-index: 100;
- padding-left: 30px;
- width: 100%;
- line-height: 70px;
- background-color: rgba(34, 49, 52, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  padding-left: 30px;
+  width: 100%;
+  line-height: 70px;
+  color: #fff;
+  background-color: rgba(34, 49, 52, 0.9);
 }
 
 .nav h2 {
- margin: 0;
- padding: 0;
- color: #fff;
- font-size: 20px;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
 }
 
 .header-left {
- float: left;
+  float: left;
+}
+
+.header-left a {
+  color: #fff;
 }
 
 .header-right {
- float: right;
- background-color: rgba(255, 255, 255, 0.3);
+  /*  position: relative; */
+  float: right;
+  text-align: right;
 }
 
-.header-right:hover {
- background-color: rgba(255, 255, 255, 0.5);
+.header-right input {
+  position: absolute;
+  display: block;
+  width: 1.75em;
+  height: 1.75em;
+  top: 15px;
+  right: 30px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 50;
+  -webkit-touch-callout: none;
+}
+
+.header-right input:checked ~ .scroll {
+  top: 70px;
+  left: 0;
+}
+
+.header-right .hamburger {
+  margin-right: 30px;
+  font-size: 1.5em;
+}
+
+.header-right .scroll {
+  position: absolute;
+  top: -210px;
+  left: 0;
+  z-index: 20;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: .25s all;
+  background-color: rgba(34, 49, 52, 0.9);
+  border-top: solid 1px #888;
 }
 
 .header-right a {
- display: block;
- padding: 0 25px;
- line-height: 70px;
- color: white;
+  display: block;
+  margin: 0;
+  padding: 0 25px;
+  line-height: 70px;
+  text-align: left;
+  color: #fff;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* bagian landing di sini */
@@ -96,10 +140,10 @@ a {
 
 /* bagian profil di sini */
 
-.profile {
- padding-bottom: 50px;
- background-color: #f5f8fa;
- text-align: center;
+#profile {
+  padding-bottom: 50px;
+  background-color: #f5f8fa;
+  text-align: center;
 }
 
 .base {
@@ -124,9 +168,9 @@ a {
 }
 
 .card:hover img {
- filter: grayscale(0%);
- transition: .15s;
- animation: shake 5s infinite;
+  filter: grayscale(0%);
+  transition: .15s all;
+  animation: shake 5s infinite;
 }
 
 .card h3 {
@@ -145,15 +189,15 @@ a {
 }
 
 .card .button {
- display: inline-block;
- margin: 15px 0 15px;
- padding: 5px 15px;
- line-height: 35px;
- background-color: #222;
- color: #fff;
- border-radius: 5px;
- box-shadow: 0 5px #666;
- transition: .15s;
+  display: inline-block;
+  margin: 15px 0 15px;
+  padding: 5px 15px;
+  line-height: 35px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px #666;
+  transition: .15s all;
 }
 
 .card .button:hover {
@@ -186,7 +230,7 @@ a {
 
 /* bagian portfolio di sini */
 
-.portfolio {
+#portfolio {
 
 }
 
@@ -198,7 +242,7 @@ a {
 
 /* bagian organizer di sini */
 
-.organizer {
+#organizer {
 
 }
 
@@ -213,9 +257,26 @@ a {
  width: 750px;
  }
 
- .base {
- width: 360px;
- }
+  .mobile-only {
+    display: none !important;
+  }
+
+  .header-right .scroll {
+    position: static;
+    top: -210px;
+    left: 0;
+    width: auto;
+    background: none;
+    border: none;
+  }
+
+  .header-right a {
+    display: inline-block;
+  }
+
+  .base {
+    width: 360px;
+  }
 }
 
 @media (min-width: 992px) {

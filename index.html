@@ -13,10 +13,26 @@
   <header class="nav">
     <!-- di sini untuk bagian navigasi -->
     <div class="header-left">
-      <h2 class="logo">F25_DTS20</h2>
+      <h2 class="logo">
+        <a href="./">F25_DTS20</a>
+      </h2>
     </div>
     <div class="header-right">
-      <a href="#" class="login">Log in</a>
+      <div id="menuToggle">
+        <input type="checkbox" class="mobile-only">
+        <i class="fas fa-bars fa-fw hamburger mobile-only"></i>
+        <ul class="scroll">
+          <a href="#profile">
+            <li>Tim Kami</li>
+          </a>
+          <a href="#portfolio">
+            <li>Portofolio</li>
+          </a>
+          <a href="#organizer">
+            <li>Penyelenggara</li>
+          </a>
+        </ul>
+      </div>
     </div>
   </header>
 
@@ -28,7 +44,7 @@
     <!-- di sini untuk bagian lesson -->
   </section>
 
-  <article class="profile">
+  <article id="profile" class="profile">
     <div class="container">
       <h2>Tim Kami</h2>
       <div class="base">
@@ -109,7 +125,7 @@
     </div>
   </article>
 
-  <section class="portfolio">
+  <section id="portfolio" class="portfolio">
     <!-- di sini untuk bagian portfolio -->
   </section>
 
@@ -117,7 +133,7 @@
     <!-- di sini untuk bagian call to action -->
   </section>
 
-  <section class="organizer">
+  <section id="organizer" class="organizer">
     <!-- di sini untuk bagian organizer -->
   </section>
 
