@@ -28,6 +28,10 @@ body {
   color: #424242;
 }
 
+a {
+  transition: .25s all;
+}
+
 .container {
   display: inline-block;
   margin: 0 auto;
@@ -39,8 +43,9 @@ body {
   font-size: 36px;
 }
 
-a {
-  transition: .25s all;
+.base {
+  display: inline-block;
+  padding: 15px;
 }
 
 /* bagian navigasi di sini */
@@ -61,24 +66,6 @@ a {
   padding: 0;
   font-size: 20px;
 }
-
-/* header {
- position: fixed;
- top: 0;
- z-index: 100;
- width: 100%;
- height: 75px;
- background-color: rgba(34, 49, 52, 0.9);
-}
-
-.header-left h2 {
- padding: 0px;
- color: #fff;
- font-size: 30px;
- margin-left: 30px;
- margin-top: 25px;
- margin-bottom: 25px;
-} */
 
 .header-left {
   float: left;
@@ -143,33 +130,12 @@ a {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/*
-.header-right a{
- color: white;
- line-height: 75px;
- display; block !important;
-}
-
-.header-right{
-  margin-right: 5px;
-}
-
-ul{
-  margin:auto;
-  padding:0;
-} */
-
-li{
+li {
   list-style: none;
   float: right;
-  padding: 0px 10px;
-  margin:0px 5px;
   display:block;
 }
 
-li:hover {
- background-color: rgba(255,255,255,0.3);
-}
 /* bagian landing di sini */
 
 .landing {
@@ -254,91 +220,57 @@ li:hover {
   color: #192a56;
   background-color: #82ccdd;
   font-weight: bold;
-/*  padding: 300px 0 300px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
-  background-size: cover;
-  color: white;
-  text-align: center; */
 }
 
 /* bagian lesson di sini */
 
 .lesson {
   padding-bottom: 50px;
+  background-color: #f5f8fa;
   text-align: center;
-  height: auto;
-  width: 100%;
-  padding : 50px 75px 75px 75px;
-  background-color: white;
-  background-size: cover;
 }
 
-.detailbelajar-wrapper {
-  width: 1195px;
-  height: auto;
-  border: 1px solid #00a8ff;
-  border-radius: 10px;
-  background-color: #dcdde1;
+.lesson .over {
+  margin-top: -30px;
+  padding: 30px 0;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
 }
 
-.detailbelajar-heading h2 {
-  color: black;
-  font-size: 60px;
-  font-weight: bold;
-  margin: 40px 0px 20px 0px;
+.lesson h2 {
+  padding: 0 0 30px;
+  font-size: 2em;
 }
 
-.induk-kategori{
+.lesson .fa-fw {
+  font-size: 80px;
+  padding: 5px;
+}
+
+.lesson .html {
+  background-color: #f06529;
+  color: #fff;
+}
+
+.lesson .css {
+  background-color: #2965f1;
+  color: #fff;
+}
+
+.lesson .js {
+  background-color: #f0db4f;
+  color: #424242;
+}
+
+.lesson .html,
+.lesson .css,
+.lesson .js {
   display: inline-block;
-}
-
-.kategori {
-  position: relative;
-  width: 300px;
-  border: 1px solid #00a8ff;
-  border-radius: 10px;
-  margin: 20px;
-  float: left;
-}
-
-.judul-kategori {
-  color: black;
-  font-size: 30px;
-  margin-top: 30px;
-}
-
-.judul-kategori p {
-  margin: 0px;
-  margin-bottom: 15px;
-}
-
-.image-kategori {
-  height: 100px;
-  width: 100px;
-  padding: 10px;
-}
-
-.konten1-kategori {
-  margin: 10px;
-  height: 320px;
-}
-
-.konten-kategori {
-  color: black;
-  font-size: 15px;
-  margin: 10px;
-}
-
-.kategori1{
-  background-color: #ff4d4d;
-}
-
-.kategori2{
-  background-color: #32ff7e;
-}
-
-.kategori3{
-  background-color: #18dcff;
+  padding: 30px;
+  vertical-align: top;
+  border-radius: 15px;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
 }
 
 /* bagian profil di sini */
@@ -347,13 +279,6 @@ li:hover {
   padding-bottom: 50px;
   background-color: #f5f8fa;
   text-align: center;
-}
-.container h2{
-  padding: 50px 0;
-}
-.base {
-  display: inline-block;
-  padding: 15px;
 }
 
 .card {
