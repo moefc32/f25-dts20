@@ -1,42 +1,42 @@
 /* bagian umum di sini */
 
 @keyframes shake {
-  10% { transform: translate(-4px, -8px) rotate(-.5deg); }
-  20% { transform: translate(7px, 2px) rotate(-2.5deg); }
-  30% { transform: translate(-5px, -2px) rotate(2.5deg); }
-  40% { transform: translate(-4px, -2px) rotate(.5deg); }
-  50% { transform: translate(4px, -1px) rotate(-2.5deg); }
-  60% { transform: translate(1px, -6px) rotate(3.5deg); }
-  70% { transform: translate(-6px, 7px) rotate(.5deg); }
-  80% { transform: translate(2px, 1px) rotate(1.5deg); }
-  90% { transform: translate(7px, 6px) rotate(-2.5deg); }
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+ 10% { transform: translate(-4px, -8px) rotate(-.5deg); }
+ 20% { transform: translate(7px, 2px) rotate(-2.5deg); }
+ 30% { transform: translate(-5px, -2px) rotate(2.5deg); }
+ 40% { transform: translate(-4px, -2px) rotate(.5deg); }
+ 50% { transform: translate(4px, -1px) rotate(-2.5deg); }
+ 60% { transform: translate(1px, -6px) rotate(3.5deg); }
+ 70% { transform: translate(-6px, 7px) rotate(.5deg); }
+ 80% { transform: translate(2px, 1px) rotate(1.5deg); }
+ 90% { transform: translate(7px, 6px) rotate(-2.5deg); }
+ 0%, 100% { transform: translate(0, 0) rotate(0deg); }
 }
 
 * {
-  box-sizing: border-box;
-  text-decoration: none;
-  outline: none !important;
+ box-sizing: border-box;
+ text-decoration: none;
+ outline: none !important;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  line-height: 1.618em;
-  color: #424242;
+ margin: 0;
+ padding: 0;
+ font-family: 'Lato', sans-serif;
+ font-size: 16px;
+ line-height: 1.618em;
+ color: #424242;
 }
 
 .container {
-  display: inline-block;
-  margin: 0 auto;
+ display: inline-block;
+ margin: 0 auto;
 }
 
 .container h2 {
-  margin: 0 auto;
-  padding: 120px 0 50px;
-  font-size: 36px;
+ margin: 0 auto;
+ padding: 120px 0 50px;
+ font-size: 36px;
 }
 
 a {
@@ -147,24 +147,24 @@ a {
 }
 
 .base {
-  display: inline-block;
-  padding: 15px;
+ display: inline-block;
+ padding: 15px;
 }
 
 .card {
-  display: inline-block;
-  padding: 30px;
-  vertical-align: top;
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
+ display: inline-block;
+ padding: 30px;
+ vertical-align: top;
+ background-color: #fff;
+ border-radius: 15px;
+ box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
 }
 
 .card img {
-  width: 80%;
-  max-width: 150px;
-  border-radius: 50%;
-  filter: grayscale(100%);
+ width: 80%;
+ max-width: 150px;
+ border-radius: 50%;
+ filter: grayscale(100%);
 }
 
 .card:hover img {
@@ -174,18 +174,18 @@ a {
 }
 
 .card h3 {
-  margin: 15px 0 5px;
-  font-size: 1.2em;
+ margin: 15px 0 5px;
+ font-size: 1.2em;
 }
 
 .card .about {
-  margin: 0;
-  color: #888;
-  line-height: 1em;
+ margin: 0;
+ color: #888;
+ line-height: 1em;
 }
 
 .card .testimonial {
-  font-style: italic;
+ font-style: italic;
 }
 
 .card .button {
@@ -201,31 +201,31 @@ a {
 }
 
 .card .button:hover {
-  background-color: #444;
+ background-color: #444;
 }
 
 .card .button:active {
-  margin: 20px 0 10px;
-  box-shadow: none;
+ margin: 20px 0 10px;
+ box-shadow: none;
 }
 
 .card .medsos {
-  display: inline-block;
-  margin: 23px 0 0 15px;
-  padding: 0 15px;
-  text-align: right;
-  vertical-align: top;
-  font-size: 1.2em;
-  line-height: 35px;
-  border-left: solid 1px #ccc;
+ display: inline-block;
+ margin: 23px 0 0 15px;
+ padding: 0 15px;
+ text-align: right;
+ vertical-align: top;
+ font-size: 1.2em;
+ line-height: 35px;
+ border-left: solid 1px #ccc;
 }
 
 .card .medsos a {
-  color: #444;
+ color: #444;
 }
 
 .card .medsos a:hover {
-  color: #2196f3;
+ color: #2196f3;
 }
 
 /* bagian portfolio di sini */
@@ -253,9 +253,9 @@ a {
 }
 
 @media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
+ .container {
+ width: 750px;
+ }
 
   .mobile-only {
     display: none !important;
@@ -280,13 +280,13 @@ a {
 }
 
 @media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
+ .container {
+ width: 970px;
+ }
 }
 
 @media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
+ .container {
+ width: 1170px;
+ }
 }
