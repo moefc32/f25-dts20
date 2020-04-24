@@ -130,30 +130,21 @@ a {
 .landing {
   padding: 120px 40px 40px 40px;
   text-align: center;
-  height: auto;
-  width: 100%;
-  background-color: #f5f8fa;
 }
 
 .landing-wrapper {
-  width: 100%;
   height: 650px;
 }
 
-.landing-heading h2 {
+.landing-heading h1 {
   color: #82ccdd;
   margin: 0 0 50px 0;
-  font-family: "Courier New";
   font-size: 60px;
-  text-shadow: 0 0 50px white,5px 5px 5px black;
-  font-weight: bold;
 }
 
 .landing-kategori {
-  position: relative;
   width: 1150px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   height: 400px;
 }
 
@@ -174,7 +165,6 @@ a {
   height: 450px;
   opacity: 0.8;
   border: 1px solid #00a8ff;
-  box-shadow: 10px 10px 5px grey;
   border-radius: 10px;
   margin: 0px 60px 55px 60px;
 }
@@ -183,9 +173,7 @@ a {
   color: #82ccdd;
   position: absolute;
   top: 40px;
-  font-family: "Courier New";
   font-size: 30px;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-weight: bold;
   width: 100%;
 }
@@ -198,7 +186,6 @@ a {
   color: white;
   position: absolute;
   top: 150px;
-  font-family: "Courier New";
   font-size: 15px;
   text-shadow: -1px 0 #192a56;
   font-weight: bold;
@@ -207,20 +194,17 @@ a {
 }
 
 .tbl-gambar {
-  font-family: "Courier New";
   padding: 15px 40px;
   color: #192a56;
   background-color: #82ccdd;
   cursor: pointer;
   border-radius: 4px;
-  box-shadow: 10px 10px 5px #273c75;
   font-weight: bold;
 }
 
 .tbl-gambar:active {
   position: relative;
   top: 10px;
-  box-shadow: none;
   border-radius: 4px;
   color: #192a56;
   background-color: #82ccdd;
@@ -229,7 +213,7 @@ a {
 
 /* bagian lesson di sini */
 
-.detailbelajar {
+.lesson {
   padding-bottom: 50px;
   text-align: center;
   height: auto;
@@ -243,14 +227,12 @@ a {
   width: 1195px;
   height: auto;
   border: 1px solid #00a8ff;
-  box-shadow: 10px 10px 5px grey;
   border-radius: 10px;
   background-color: #dcdde1;
 }
 
 .detailbelajar-heading h2 {
   color: black;
-  font-family: "Courier New";
   font-size: 60px;
   font-weight: bold;
   margin: 40px 0px 20px 0px;
@@ -264,7 +246,6 @@ a {
   position: relative;
   width: 300px;
   border: 1px solid #00a8ff;
-  box-shadow: 10px 10px 5px grey;
   border-radius: 10px;
   margin: 20px;
   float: left;
@@ -272,7 +253,6 @@ a {
 
 .judul-kategori {
   color: black;
-  font-family: "Courier New";
   font-size: 30px;
   margin-top: 30px;
 }
@@ -295,7 +275,6 @@ a {
 
 .konten-kategori {
   color: black;
-  font-family: "Courier New";
   font-size: 15px;
   margin: 10px;
 }
