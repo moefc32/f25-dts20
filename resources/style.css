@@ -60,8 +60,9 @@ img {
 
 .container h2 {
   margin: 0 auto;
-  padding: 120px 0 50px;
+  padding: 70px 30px 50px;
   font-size: 2.5em;
+  line-height: 1.618em;
 }
 
 .base {
@@ -126,7 +127,7 @@ img {
 
 .header-right .scroll {
   position: absolute;
-  top: -210px;
+  top: -280px;
   left: 0;
   z-index: 20;
   width: 100vw;
@@ -203,6 +204,7 @@ img {
 /* bagian lesson di sini */
 
 #lesson {
+  padding-bottom: 50px;
   background-color: #e8f5e9;
   text-align: center;
 }
@@ -216,8 +218,8 @@ img {
 }
 
 #lesson h2 {
-  padding: 0 0 30px;
-  font-size: 1.75em;
+  padding: 0 30px 30px;
+  font-size: 1.5em;
 }
 
 #lesson .fa-fw {
@@ -260,7 +262,6 @@ img {
 /* bagian profil di sini */
 
 #profile {
-  padding-bottom: 50px;
   background-color: #e8f5e9;
   text-align: center;
 }
@@ -355,6 +356,7 @@ img {
   margin-top: 15px;
   background-color: #fff;
   text-align: left;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
 }
 
 #portfolio .wrap:first-of-type {
@@ -463,6 +465,22 @@ img {
   text-align: center;
 }
 
+#organizer h2 {
+  font-size: 1.5em;
+}
+
+#organizer img {
+  width: auto;
+  max-height: 140px;
+  margin: 0 50px;
+  filter: grayscale(100%);
+  transition: .25s all;
+}
+
+#organizer img:hover {
+  filter: grayscale(0%);
+}
+
 /* bagian footer di sini */
 
 .footer {
@@ -481,8 +499,6 @@ img {
 
   .header-right .scroll {
     position: static;
-    top: -210px;
-    left: 0;
     width: auto;
     background: none;
     border: none;
@@ -494,6 +510,10 @@ img {
 
   .base {
     width: 360px;
+  }
+
+  #portfolio .wrap {
+    border-radius: 30px;
   }
 }
 
@@ -549,5 +569,6 @@ img {
 
   #portfolio h3 {
     margin-top: 30px;
+    font-size: 2.5em;
   }
 }
