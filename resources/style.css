@@ -484,9 +484,32 @@ img {
 
 /* bagian footer di sini */
 
-.footer {
-  background-color: #e8f5e9;
+footer {
+  background-color: #353a40;
+  color: #fff;
   text-align: center;
+}
+
+footer .container {
+  width: 100%;
+  margin: 0;
+  padding: 0 30px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #2196f3;
+}
+
+footer .left span {
+  margin: 0 15px;
+}
+
+footer .right span {
+  margin: 0 5px;
 }
 
 @media (min-width: 768px) {
@@ -515,6 +538,14 @@ img {
 
   #portfolio .wrap {
     border-radius: 30px;
+  }
+
+  footer .left {
+    float: left;
+  }
+
+  footer .right {
+    float: right;
   }
 }
 
