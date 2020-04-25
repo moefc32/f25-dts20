@@ -150,9 +150,9 @@ a {
 /* bagian landing di sini */
 
 #landing {
-  padding: 25vh 0 0;
+  padding-top: 25vh;
   height: calc(100vh + 70px);
-  background: linear-gradient(130deg, rgba(76,175,80,1) 0%, rgba(205,220,57,1) 100%);
+  background: linear-gradient(130deg, #4caf50 0%, #cddc39 100%);
   line-height: 100vh;
   font-size: 1.25em;
   text-align: center;
@@ -200,7 +200,7 @@ a {
 /* bagian lesson di sini */
 
 #lesson {
-  background-color: #eceff1;
+  background-color: #e8f5e9;
   text-align: center;
 }
 
@@ -258,7 +258,7 @@ a {
 
 #profile {
   padding-bottom: 50px;
-  background-color: #eceff1;
+  background-color: #e8f5e9;
   text-align: center;
 }
 
@@ -342,7 +342,8 @@ a {
 /* bagian portfolio di sini */
 
 #portfolio {
-
+  background-color: #e8f5e9;
+  text-align: center;
 }
 
 /* bagian call to action di sini */
@@ -351,7 +352,6 @@ a {
   background-color: #0af;
   color: #fff;
   text-align: center;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, .05);
 }
 
 .cta .container {
@@ -390,12 +390,14 @@ a {
 /* bagian organizer di sini */
 
 #organizer {
+  background-color: #e8f5e9;
   text-align: center;
 }
 
 /* bagian footer di sini */
 
 .footer {
+  background-color: #e8f5e9;
   text-align: center;
 }
 
@@ -432,7 +434,9 @@ a {
   }
 
   #landing {
-    background: url(blob.png) 50vw 0 no-repeat, linear-gradient(130deg, rgba(76,175,80,1) 0%, rgba(205,220,57,1) 100%);
+    min-height: 700px;
+    padding-top: 200px;
+    background: url(blob.png) 50vw bottom no-repeat, linear-gradient(130deg, #4caf50 0%, #cddc39 100%);
   }
 
   #landing .intro {
