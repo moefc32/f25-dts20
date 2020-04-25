@@ -46,6 +46,7 @@ body {
 }
 
 a {
+  cursor: pointer;
   transition: .25s all;
 }
 
@@ -557,7 +558,7 @@ footer .right span {
   #landing {
     min-height: 700px;
     padding-top: 200px;
-    background: url(blob.png) 50vw bottom no-repeat, linear-gradient(135deg, #8360c3 0%, #2ebf91 100%);
+    background: url(blob.png) 50vw center no-repeat, linear-gradient(135deg, #8360c3 0%, #2ebf91 100%);
   }
 
   #landing .intro {
