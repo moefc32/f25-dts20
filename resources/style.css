@@ -1,16 +1,16 @@
 /* bagian umum di sini */
 
 @keyframes shake1 {
-	10% { transform: translate(-4px, -8px) rotate(-.5deg); }
-	20% { transform: translate(10px, 2px) rotate(-2.5deg); }
-	30% { transform: translate(-5px, -2px) rotate(2.5deg); }
-	40% { transform: translate(-4px, -2px) rotate(.5deg); }
-	50% { transform: translate(4px, -1px) rotate(-2.5deg); }
-	60% { transform: translate(1px, -9px) rotate(3.5deg); }
-	70% { transform: translate(-9px, 10px) rotate(.5deg); }
-	80% { transform: translate(-6px, 1px) rotate(1.5deg); }
-	90% { transform: translate(9px, 6px) rotate(-2.5deg); }
-	0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  10% { transform: translate(-4px, -8px) rotate(-.5deg); }
+  20% { transform: translate(10px, 2px) rotate(-2.5deg); }
+  30% { transform: translate(-5px, -2px) rotate(2.5deg); }
+  40% { transform: translate(-4px, -2px) rotate(.5deg); }
+  50% { transform: translate(4px, -1px) rotate(-2.5deg); }
+  60% { transform: translate(1px, -9px) rotate(3.5deg); }
+  70% { transform: translate(-9px, 10px) rotate(.5deg); }
+  80% { transform: translate(-6px, 1px) rotate(1.5deg); }
+  90% { transform: translate(9px, 6px) rotate(-2.5deg); }
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
 }
 
 @keyframes shake2 {
@@ -176,13 +176,14 @@ a {
 
 #landing .button {
   padding: 15px 30px;
-  color: #fff;
+  background-color: #ffeb3b;
+  color: #424242;
   border: 2px solid #fff;
   border-radius: 50px;
 }
 
 #landing .button:hover {
-  background-color: rgba(255,255,255,.25);
+  background-color: #fbc02d;
 }
 
 #landing .people {
@@ -310,7 +311,7 @@ a {
   transition: .15s all;
 }
 
-#profile .card .button:hover {
+#profile .button:hover {
   background-color: #444;
 }
 
@@ -347,19 +348,55 @@ a {
 /* bagian call to action di sini */
 
 .cta {
+  background-color: #0af;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, .05);
+}
 
+.cta .container {
+  padding: 30px 15px;
+}
+
+.cta p {
+  display: inline-block;
+  margin: 0 0 15px 0;
+  vertical-align: top;
+  font-size: 1.4em;
+  line-height: 1.618em;
+}
+
+.cta .button {
+  display: inline-block;
+  margin: 0;
+  padding: 5px 15px;
+  line-height: 35px;
+  background-color: #08c;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px #069;
+  transition: .15s all;
+}
+
+.cta .button:hover {
+  background-color: #07b;
+}
+
+.cta .button:active {
+  margin: 5px 0 -5px;
+  box-shadow: none;
 }
 
 /* bagian organizer di sini */
 
 #organizer {
-
+  text-align: center;
 }
 
 /* bagian footer di sini */
 
 .footer {
-
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -406,6 +443,15 @@ a {
 
   #landing .people {
     display: inline-block;
+  }
+
+  .cta .container {
+    padding: 30px 50px;
+  }
+
+  .cta p {
+    margin: 0 50px 0 0;
+    line-height: 50px;
   }
 }
 
