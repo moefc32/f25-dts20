@@ -386,7 +386,7 @@ img {
   background-color: #2ebf91;
   color: #fff;
   border-radius: 5px;
-  box-shadow: 0 5px #155942;
+  box-shadow: 0 5px #228c6a;
   transition: .15s all;
 }
 
@@ -472,7 +472,7 @@ img {
 
 #organizer img {
   width: auto;
-  max-height: 140px;
+  max-height: 120px;
   margin: 0 50px;
   filter: grayscale(100%);
   transition: .25s all;
