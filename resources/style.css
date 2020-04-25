@@ -45,7 +45,7 @@ a {
 
 /* bagian navigasi di sini */
 
-.nav {
+/*.nav {
   position: fixed;
   top: 0;
   z-index: 100;
@@ -60,9 +60,9 @@ a {
   margin: 0;
   padding: 0;
   font-size: 20px;
-}
+}*/
 
-/* header {
+header {
  position: fixed;
  top: 0;
  z-index: 100;
@@ -78,7 +78,7 @@ a {
  margin-left: 30px;
  margin-top: 25px;
  margin-bottom: 25px;
-} */
+}
 
 .header-left {
   float: left;
@@ -133,8 +133,8 @@ a {
 .header-right a {
   display: block;
   margin: 0;
-  padding: 0 25px;
-  line-height: 70px;
+  padding: 0px 10px;
+  line-height: 75px;
   text-align: left;
   color: #fff;
 }
@@ -143,36 +143,93 @@ a {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/*
-.header-right a{
- color: white;
- line-height: 75px;
- display; block !important;
-}
-
-.header-right{
-  margin-right: 5px;
-}
-
-ul{
-  margin:auto;
-  padding:0;
-} */
-
 li{
   list-style: none;
   float: right;
   padding: 0px 10px;
   margin:0px 5px;
-  display:block;
 }
 
-li:hover {
- background-color: rgba(255,255,255,0.3);
-}
+
 /* bagian landing di sini */
 
-.landing {
+.landing{
+  margin-top:75px;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000;
+}
+ .slideshow{
+   width: 100%;
+   height: 100vh;
+   position: relative;
+   overflow: hidden;
+}
+
+.slideshow-item{
+   width: inherit;
+   height: inherit;
+   position: absolute;
+   opacity: 0;
+   animation: cycleImages 21s infinite;
+}
+
+.slideshow-item img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   animation: zoom 21s infinite;
+}
+
+.slideshow-item:nth-child(1),
+.slideshow-item:nth-child(1) img{
+  animation-delay: 0s;
+}
+
+.slideshow-item:nth-child(2),
+.slideshow-item:nth-child(2) img{
+  animation-delay: 10s;
+}
+
+.slideshow-item-text{
+  max-width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding:10rem 5rem;
+}
+
+.slideshow-item-text h5{
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 2.5rem;
+ }
+
+ .slideshow-item-text p{
+   font-size: 1.5rem;
+   font-family: 'Roboto', sans-serif;
+   letter-spacing: 1px;
+   font-weight: 300;
+ }
+
+ @keyframes cycleImages{
+   25%{
+     opacity: 1;
+   }
+   40%{
+     opacity: 0;
+   }
+ }
+
+ @keyframes zoom {
+   transform: scale(1.3);
+ }
+/*.landing {
   padding: 120px 40px 40px 40px;
   text-align: center;
   height: auto;
@@ -270,12 +327,7 @@ li:hover {
   color: #192a56;
   background-color: #82ccdd;
   font-weight: bold;
-/*  padding: 300px 0 300px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
-  background-size: cover;
-  color: white;
-  text-align: center; */
-}
+}*/
 
 /* bagian lesson di sini */
 
