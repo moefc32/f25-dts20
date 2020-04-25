@@ -49,6 +49,10 @@ a {
   transition: .25s all;
 }
 
+img {
+  width: 100%;
+}
+
 .container {
   display: inline-block;
   margin: 0 auto;
@@ -152,7 +156,7 @@ a {
 #landing {
   padding-top: 25vh;
   height: calc(100vh + 70px);
-  background: linear-gradient(130deg, #4caf50 0%, #cddc39 100%);
+  background: linear-gradient(135deg, #8360c3 0%, #2ebf91 100%);
   line-height: 100vh;
   font-size: 1.25em;
   text-align: center;
@@ -176,10 +180,10 @@ a {
 
 #landing .button {
   padding: 15px 30px;
-  background-color: #ffeb3b;
-  color: #424242;
-  border: 2px solid #fff;
+  background-color: #2ebf91;
+  color: #fff;
   border-radius: 50px;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
 }
 
 #landing .button:hover {
@@ -341,14 +345,79 @@ a {
 /* bagian portfolio di sini */
 
 #portfolio {
+  padding-bottom: 50px;
   background-color: #e8f5e9;
   text-align: center;
+}
+
+#portfolio .wrap {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #fff;
+  text-align: left;
+}
+
+#portfolio .wrap:first-of-type {
+  margin-top: 0;
+}
+
+#portfolio .image {
+  line-height: 0;
+}
+
+#portfolio .caption {
+  padding: 30px 50px;
+}
+
+#portfolio h3 {
+  margin: 0;
+  font-size: 2em;
+  line-height: 1.75em;
+}
+
+#portfolio .button {
+  display: inline-block;
+  margin: 15px 0 15px;
+  padding: 5px 15px;
+  line-height: 35px;
+  background-color: #2ebf91;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px #155942;
+  transition: .15s all;
+}
+
+#portfolio .button:hover {
+  background-color: #28a67e;
+}
+
+#portfolio .button:active {
+  margin: 20px 0 10px;
+  box-shadow: none;
+}
+
+#portfolio .github {
+  display: inline-block;
+  margin: 23px 0 0 15px;
+  padding: 0 15px;
+  text-align: right;
+  vertical-align: top;
+  line-height: 35px;
+  border-left: solid 1px #ccc;
+}
+
+#portfolio .github {
+  color: #444;
+}
+
+#portfolio .github:hover {
+  color: #2196f3;
 }
 
 /* bagian call to action di sini */
 
 .cta {
-  background-color: #0af;
+  background: linear-gradient(135deg, #2f80ed 0%, #56ccf2 100%);
   color: #fff;
   text-align: center;
 }
@@ -389,6 +458,7 @@ a {
 /* bagian organizer di sini */
 
 #organizer {
+  padding-bottom: 50px;
   background-color: #e8f5e9;
   text-align: center;
 }
@@ -435,7 +505,7 @@ a {
   #landing {
     min-height: 700px;
     padding-top: 200px;
-    background: url(blob.png) 50vw bottom no-repeat, linear-gradient(130deg, #4caf50 0%, #cddc39 100%);
+    background: url(blob.png) 50vw bottom no-repeat, linear-gradient(135deg, #8360c3 0%, #2ebf91 100%);
   }
 
   #landing .intro {
@@ -446,6 +516,12 @@ a {
 
   #landing .people {
     display: inline-block;
+  }
+
+  #portfolio .image,
+  #portfolio .caption {
+    float: left;
+    width: 50%;
   }
 
   .cta .container {
@@ -469,5 +545,9 @@ a {
 
   #landing .people {
     margin-right: 80px;
+  }
+
+  #portfolio h3 {
+    margin-top: 30px;
   }
 }
