@@ -101,7 +101,6 @@ a {
 }
 .detailbelajar-heading h2 {
   color: black;
-  font-family: "Courier New";
   font-size: 60px;
   font-weight: bold;
   margin: 40px 40px 20px 40px;
@@ -122,12 +121,10 @@ a {
 }
 .judul-kategori {
   color: black;
-  font-family: "Courier New";
   font-size: 30px;
   margin-top: 30px;
 }
 .judul-kategori p {
-  margin: 0px;
   margin-bottom: 15px;
 }
 .image-kategori {
@@ -137,19 +134,17 @@ a {
 }
 .konten-kategori {
   color: black;
-  font-family: "Courier New";
   font-size: 15px;
-  margin: 10px;
+  margin: 10px 10px 30px 10px;
 }
 .kategori1{
   background-color: #ff4d4d;
 }
 .kategori2{
-  background-color: #32ff7e;
-}
+  background-color: #18dcff;
 }
 .kategori3{
-  background-color: #18dcff;
+  background-color: #fffa65;
 }
 
 /* bagian profil di sini */
