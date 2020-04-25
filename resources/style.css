@@ -186,10 +186,62 @@ a {
 
 /* bagian portfolio di sini */
 
-.portfolio {
-
+.portfolio {    
+    height: 500px;
+    width: 100%;
+    background-color: #f5f8fa;
+    text-align: center;
+}
+.portfolio h2 {
+    padding: 50px 0;
+    color: #424242;
+}
+.dalam {
+    padding: 20px;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.dalam img{
+    padding: 50px 20px;
+}
+.dalam p{
+    text-align: left;
+}
+.tombol{
+    text-align: left;
+    padding-top: 20px;
+}
+.tombol p{
+    text-align: center;
+    padding-top: 5px; 
+    padding-right: 170px;
+}
+.tombol a{
+    float:left;
+}
+.tombol a{
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  border-radius: 4px;
+  text-align: center;
+  padding: 15px 40px;
+  background-color: #222;
+  cursor: pointer;
+  box-shadow: 0 7px#666;
+  transition: .15s;
+  line-height: 35px;
 }
 
+.tombol a:hover {
+    background-color: #444;
+}
+
+.tombol a:active {
+    margin: 20px 0 10px;
+    box-shadow: none;
+}
 /* bagian call to action di sini */
 
 .cta {
@@ -216,16 +268,28 @@ a {
  .base {
  width: 360px;
  }
+ .tombol p{
+    text-align: center;
+    padding-top: 5px; 
+    padding-right: 70px;
+}
 }
 
 @media (min-width: 992px) {
  .container {
  width: 970px;
  }
+ .tombol p{
+    text-align: center;
+    padding-top: 5px; 
+    padding-right: 70px;
+}
 }
 
 @media (min-width: 1200px) {
  .container {
  width: 1170px;
  }
+
 }
+
