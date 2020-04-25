@@ -192,7 +192,6 @@ a {
   margin-right: 15px;
   width: 320px;
   height: 240px;
-  line-height: 100vh;
   background: url(people.png) center center no-repeat;
   animation: shake1 10s infinite;
 }
