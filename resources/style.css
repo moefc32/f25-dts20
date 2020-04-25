@@ -83,10 +83,11 @@ img {
   background-color: rgba(34,49,52,.9);
 }
 
-.nav h2 {
+.nav .logo {
   margin: 0;
   padding: 0;
   font-size: 20px;
+  font-weight: bold;
 }
 
 .header-left {
