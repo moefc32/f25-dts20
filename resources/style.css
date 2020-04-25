@@ -263,31 +263,7 @@ a {
 .footer {
 
 }
-@media (max-width: 768px){
-.container {
-    width: 750px;
-}
-.base {
-    width: 360px;
-}
-.dalam {
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-}
-.dalam p{
-    text-align: center;
-}
-.tombol {
-    text-align: center;
-    padding:5px 150px;
-}
-.tombol p{
-    text-align: center;
-    padding-top: 5px; 
-    padding-right: 70px;
-} 
-}
+
 @media (min-width: 768px) {
  .container {
  width: 750px;
@@ -307,6 +283,7 @@ a {
 .tombol {
     text-align: center;
     padding:5px 150px;
+    border-left:50px ;
 }
 .tombol p{
     text-align: center;
@@ -331,7 +308,7 @@ a {
 }
 .tombol {
     text-align: center;
-    padding:5px 40px 0 0;
+    padding:5px 40px 0 40px;
 }
 .tombol p{
     text-align: center;
