@@ -90,6 +90,10 @@ img {
   transition: .25s all;
 }
 
+#to-top:hover {
+  opacity: 1;
+}
+
 /* bagian navigasi di sini */
 
 header {
