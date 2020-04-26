@@ -13,30 +13,32 @@
 
   <!-- di sini untuk bagian navigasi -->
 
-  <header class="nav">
-    <div class="header-left">
-      <p class="logo">
-        <a href="./">F25_DTS20</a>
-      </p>
-    </div>
-    <div class="header-right">
-      <div id="menuToggle">
-        <input type="checkbox" class="mobile-only">
-        <i class="fas fa-bars fa-fw hamburger mobile-only"></i>
-        <ul class="scroll">
-          <a onclick="scrollLesson()">
-            <li>Materi</li>
-          </a>
-          <a onclick="scrollProfile()">
-            <li>Tim Kami</li>
-          </a>
-          <a onclick="scrollPortfolio()">
-            <li>Portofolio</li>
-          </a>
-          <a onclick="scrollOrganizer()">
-            <li>Penyelenggara</li>
-          </a>
-        </ul>
+  <header>
+    <div class="container">
+      <div class="header-left">
+        <p class="logo">
+          <a href="./">F25_DTS20</a>
+        </p>
+      </div>
+      <div class="header-right">
+        <div id="menuToggle">
+          <input type="checkbox" class="mobile-only">
+          <i class="fas fa-bars fa-fw hamburger mobile-only"></i>
+          <ul class="scroll">
+            <a onclick="scrollLesson()">
+              <li>Materi</li>
+            </a>
+            <a onclick="scrollProfile()">
+              <li>Tim Kami</li>
+            </a>
+            <a onclick="scrollPortfolio()">
+              <li>Portofolio</li>
+            </a>
+            <a onclick="scrollOrganizer()">
+              <li>Penyelenggara</li>
+            </a>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -68,7 +70,7 @@
         </div>
         <div class="base">
           <div class="css">
-            <i class="fab fa-css3 fa-fw"></i>
+            <i class="fab fa-css3-alt fa-fw"></i>
             <p><strong>CSS</strong> merupakan aturan terhadap beberapa komponen dalam halaman website yang dituliskan agar konten dapat ditampilkan dengan lebih estetis, dinamis, dan seragam</p>
           </div>
         </div>
@@ -177,9 +179,15 @@
         <div class="caption">
           <h3>Website Tim</h3>
           <p>Pada sesi pertama, para peserta DTS 2020 mengerjakan proyek tim berupa pembuatan halaman website dari HTML dan CSS yang telah dipelajari sebelumnya melalui modul pembelajaran di Progate.</p>
-          <a href="./" class="button">Akses Halaman</a>
+          <a href="./" class="button">
+            Akses<span class="non-mobile-only">
+              Halaman
+            </span>
+          </a>
           <a href="https://github.com/moefc32/F25_DTS20" target="_blank" class="github">
-            <i class="fab fa-github fa-fw"></i> Lihat di GitHub
+            <span class="non-mobile-only">
+              <i class="fab fa-github fa-fw"></i>
+            </span>Lihat di GitHub
           </a>
         </div>
       </div>

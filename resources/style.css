@@ -32,15 +32,11 @@
   outline: none !important;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.618em;
   color: #424242;
 }
@@ -66,6 +62,10 @@ img {
   line-height: 1.618em;
 }
 
+.non-mobile-only {
+  display: none !important;
+}
+
 .base {
   display: inline-block;
   padding: 15px;
@@ -73,18 +73,24 @@ img {
 
 /* bagian navigasi di sini */
 
-.nav {
+header {
   position: fixed;
   top: 0;
   z-index: 100;
-  padding-left: 30px;
   width: 100%;
-  line-height: 70px;
+  line-height: 0;
   color: #fff;
   background-color: rgba(34,49,52,.9);
 }
 
-.nav .logo {
+header .container {
+  width: 100%;
+  margin: 0;
+  padding: 0 0 0 30px;
+  line-height: 70px;
+}
+
+header .logo {
   margin: 0;
   padding: 0;
   font-size: 20px;
@@ -174,7 +180,7 @@ img {
 
 #landing h1 {
   margin: 0 0 50px;
-  font-size: 3.5em;
+  font-size: 2em;
 }
 
 #landing p {
@@ -472,9 +478,11 @@ img {
 }
 
 #organizer img {
+  display: block;
   width: auto;
+  max-width: 80%;
   max-height: 120px;
-  margin: 0 50px;
+  margin: 0 auto;
   filter: grayscale(100%);
   transition: .25s all;
 }
@@ -489,12 +497,14 @@ footer {
   background-color: #353a40;
   color: #fff;
   text-align: center;
+  line-height: 0;
 }
 
 footer .container {
   width: 100%;
   margin: 0;
   padding: 0 30px;
+  line-height: 1.618em;
 }
 
 footer a {
@@ -514,12 +524,20 @@ footer .right span {
 }
 
 @media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
   .container {
     width: 750px;
   }
 
   .mobile-only {
     display: none !important;
+  }
+
+  .non-mobile-only {
+    display: initial !important;
   }
 
   .header-right .scroll {
@@ -537,8 +555,18 @@ footer .right span {
     width: 360px;
   }
 
+  #landing h1 {
+    font-size: 3.5em;
+  }
+
   #portfolio .wrap {
     border-radius: 30px;
+  }
+
+  #organizer img {
+    display: inline;
+    max-width: initial;
+    margin: 0 50px;
   }
 
   footer .left {
