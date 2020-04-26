@@ -100,7 +100,7 @@ a {
   background-color: #dcdde1;
 }
 .detailbelajar-heading h2 {
-  color: black;
+  color: white;
   font-size: 60px;
   font-weight: bold;
   margin: 40px 40px 20px 40px;
@@ -113,14 +113,14 @@ a {
   display: inline-block;
   max-width: 300px;
   width: 80%;
-  border: 1px solid #00a8ff;
+  border: 1px solid #f5f8fa;
   box-shadow: 10px 10px 5px grey;
   border-radius: 10px;
   vertical-align: middle;
   margin: 20px;
 }
 .judul-kategori {
-  color: black;
+  color: white;
   font-size: 30px;
   margin-top: 30px;
 }
@@ -133,7 +133,7 @@ a {
   padding: 10px;
 }
 .konten-kategori {
-  color: black;
+  color: white;
   font-size: 15px;
   margin: 10px 10px 30px 10px;
 }
@@ -141,10 +141,10 @@ a {
   background-color: #ff4d4d;
 }
 .kategori2{
-  background-color: #18dcff;
+  background-color: #17c0eb;
 }
 .kategori3{
-  background-color: #fffa65;
+  background-color: #ff9f1a;
 }
 
 /* bagian profil di sini */
