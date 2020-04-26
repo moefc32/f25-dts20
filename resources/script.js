@@ -7,12 +7,13 @@ window.onscroll = function scrollFunction() {
   }
 }
 
-function findPos(obj) {
+function findPos(item) {
   var curtop = 0;
-  if (obj.offsetParent) {
+  if (item.offsetParent) {
     do {
-      curtop += obj.offsetTop;
-    } while (obj = obj.offsetParent);
+      curtop += item.offsetTop;
+    }
+    while (item = item.offsetParent);
     return [curtop];
   }
 }
