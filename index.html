@@ -10,132 +10,260 @@
   <link rel="stylesheet" href="resources/style.css">
 </head>
 <body>
-  <header class="nav">
-    <!-- di sini untuk bagian navigasi -->
-    <div class="header-left">
-      <h2 class="logo">F25_DTS20</h2>
-    </div>
-    <div class="header-right">
-      <a href="#" class="login">Log in</a>
+
+  <!-- di sini untuk bagian navigasi -->
+
+  <header>
+    <div class="container">
+      <div class="header-left">
+        <p class="logo">
+          <a href="./">F25_DTS20</a>
+        </p>
+      </div>
+      <div class="header-right">
+        <input type="checkbox" class="mobile-only" id="menu-toggle">
+        <i class="fas fa-bars fa-fw hamburger mobile-only"></i>
+        <ul class="scroll">
+          <a onclick="scrollLink('lesson')">
+            <li>Materi</li>
+          </a>
+          <a onclick="scrollLink('profile')">
+            <li>Anggota Tim</li>
+          </a>
+          <a onclick="scrollLink('portfolio')">
+            <li>Portofolio</li>
+          </a>
+          <a onclick="scrollLink('organizer')">
+            <li>Penyelenggara</li>
+          </a>
+        </ul>
+      </div>
     </div>
   </header>
 
-  <section class="landing">
-    <!-- di sini untuk bagian landing -->
+  <!-- di sini untuk bagian landing -->
+
+  <section id="landing">
+    <div class="container">
+      <div class="intro">
+        <h1>F25_DTS20</h1>
+        <p>Selamat datang! Inilah hasil dari proyek tim <strong>F25</strong>, melalui program Digital Talent Scholarship 2020 oleh Kementerian Komunikasi dan Informatika, bekerja sama dengan Progate Indonesia.</p>
+        <a onclick="scrollLink('lesson')" class="button" title="Lihat selengkapnya dari tim F25_DTS20">Selengkapnya</a>
+      </div>
+      <div class="people"></div>
+    </div>
   </section>
 
-  <section class="lesson">
-    <!-- di sini untuk bagian lesson -->
+  <!-- di sini untuk bagian lesson -->
+
+  <section id="lesson">
+    <div class="container">
+      <div class="over">
+        <h2>Apa saja yang kami pelajari di DTS 2020?</h2>
+        <div class="base" title="Hypertext Markup Language">
+          <div class="html">
+            <i class="fab fa-html5 fa-fw"></i>
+            <p><strong>HTML</strong> adalah sebuah bahasa markup yang digunakan untuk membuat halaman website, agar dapat menghasilkan tampilan yang terstruktur dengan baik</p>
+          </div>
+        </div>
+        <div class="base" title="Cascading Style Sheets">
+          <div class="css">
+            <i class="fab fa-css3-alt fa-fw"></i>
+            <p><strong>CSS</strong> merupakan aturan terhadap beberapa komponen dalam halaman website yang dituliskan agar konten dapat ditampilkan dengan lebih estetis, dinamis, dan seragam</p>
+          </div>
+        </div>
+        <div class="base" title="JavaScript">
+          <div class="js">
+            <i class="fab fa-js fa-fw"></i>
+            <p><strong>JavaScript</strong> adalah sebuah bahasa pemrograman tingkat tinggi dan dinamis yang disisipkan secara khusus untuk menyempurnakan sistem dari sebuah halaman website</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <article class="profile">
+  <!-- di sini untuk bagian profile -->
+
+  <section id="profile">
     <div class="container">
       <h2>Tim Kami</h2>
       <div class="base">
         <div class="card">
-          <img src="resources/faizal.jpg" alt="Faizal">
+          <img src="resources/faizal.jpg" alt="Faizal" title="Mochammad Faizal">
           <h3>Mochammad Faizal</h3>
-          <p class="about">Web Design Hobbyist</p>
+          <p class="about">User Experience Researcher</p>
           <p class="testimonial">Menurut saya, program DTS bersama Progate ini sangat menyenangkan. Saya mendapatkan pengalaman baru, pemahaman baru, dan tentunya banyak kenalan baru di sini. Top!</p>
-          <a href="https://github.com/moefc32" target="_blank" class="button">
+          <a href="https://github.com/moefc32" target="_blank" class="button" title="Akses Github Faizal">
             <i class="fab fa-github fa-fw"></i> GitHub
           </a>
           <div class="medsos">
-            <a href="#" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a>
-            <a href="#" target="_blank"><i class="fas fa-envelope fa-fw"></i></a>
+            <a href="https://www.linkedin.com/in/moefc32/" target="_blank" title="LinkedIn Faizal">
+              <i class="fab fa-linkedin fa-fw"></i>
+            </a>
+            <a href="mailto:hai@mf-chan.com" target="_blank" title="Kirim surel">
+              <i class="fas fa-envelope fa-fw"></i>
+            </a>
           </div>
         </div>
       </div>
       <div class="base">
         <div class="card">
-          <img src="resources/favicon.png" alt="">
+          <img src="resources/alfan.jpg" alt="Alfan" title="M. Alfan Qadar">
           <h3>M. Alfan Qadar</h3>
-          <p class="about">Web Design Hobbyist</p>
-          <p class="testimonial">Menurut saya, program DTS bersama Progate ini sangat menyenangkan. Saya mendapatkan pengalaman baru, pemahaman baru, dan tentunya banyak kenalan baru di sini. Top!</p>
-          <a href="https://github.com/alfanmq" target="_blank" class="button">
+          <p class="about">Newbie Web Designer</p>
+          <p class="testimonial">Program DTS ini sangat bermanfaat. Pembelajaran yang diberikan lumayan unik, menarik, dan difasilitasi secara gratis, sehingga tidak terasa bosan untuk mengerjakannya.</p>
+          <a href="https://github.com/alfanmq" target="_blank" class="button" title="Akses Github Alfan">
             <i class="fab fa-github fa-fw"></i> GitHub
           </a>
           <div class="medsos">
-            <a href="#" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a>
-            <a href="#" target="_blank"><i class="fas fa-envelope fa-fw"></i></a>
+            <a href="https://www.linkedin.com/in/alfanmq/" target="_blank" title="LinkedIn Alfan">
+              <i class="fab fa-linkedin fa-fw"></i>
+            </a>
+            <a href="mailto:alfan.mq@gmail.com" target="_blank" title="Kirim surel">
+              <i class="fas fa-envelope fa-fw"></i>
+            </a>
           </div>
         </div>
       </div>
       <div class="base">
         <div class="card">
-          <img src="resources/adib.jpeg" alt="adib">
+          <img src="resources/adib.jpg" alt="Adib" title="Muhammad Adib Maulana">
           <h3>Muhammad Adib Maulana</h3>
           <p class="about">Web Design Hobbyist</p>
-          <p class="testimonial">Menurut saya, program DTS bersama Progate ini sangat menyenangkan. Saya mendapatkan pengalaman baru, pemahaman baru, dan tentunya banyak kenalan baru di sini. Top!</p>
-          <a href="https://github.com/adibmaul11" target="_blank" class="button">
+          <p class="testimonial">Program pelatihan Progate DTS memberikan pengalaman yang baru. Selain mempermudah belajar, kita bisa bertanya kapanpun yang berkaitan dengan pelatihan. Mantap!</p>
+          <a href="https://github.com/adibmaul11" target="_blank" class="button" title="Akses Github Adib">
             <i class="fab fa-github fa-fw"></i> GitHub
           </a>
           <div class="medsos">
-            <a href="#" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a>
-            <a href="#" target="_blank"><i class="fas fa-envelope fa-fw"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-adib-maulana-916b071a7/" target="_blank" title="LinkedIn Adib">
+              <i class="fab fa-linkedin fa-fw"></i>
+            </a>
+            <a href="mailto:m.adibmaulana31@gmail.com" target="_blank" title="Kirim surel">
+              <i class="fas fa-envelope fa-fw"></i>
+            </a>
           </div>
         </div>
       </div>
       <div class="base">
         <div class="card">
-          <img src="resources/favicon.png" alt="">
+          <img src="resources/shiddiq.jpg" alt="Shiddiq" title="Muhammad As Shiddiq">
           <h3>Muhammad As Shiddiq</h3>
-          <p class="about">Web Design Hobbyist</p>
-          <p class="testimonial">Menurut saya, program DTS bersama Progate ini sangat menyenangkan. Saya mendapatkan pengalaman baru, pemahaman baru, dan tentunya banyak kenalan baru di sini. Top!</p>
-          <a href="https://github.com/masshiddiq" target="_blank" class="button">
+          <p class="about">Web Design Beginner</p>
+          <p class="testimonial">Pembelajaran dari DTS dan Progate ini membuat saya mengenal dunia baru, dan ada banyak orang hebat yang terus mendukung saya dalam belajar coding. Thanks best friend!</p>
+          <a href="https://github.com/masshiddiq" target="_blank" class="button" title="Akses Github Shiddiq">
             <i class="fab fa-github fa-fw"></i> GitHub
           </a>
           <div class="medsos">
-            <a href="#" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a>
-            <a href="#" target="_blank"><i class="fas fa-envelope fa-fw"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-as-shiddiq-baa8b6142/" target="_blank" title="LinkedIn Shiddiq">
+              <i class="fab fa-linkedin fa-fw"></i>
+            </a>
+            <a href="mailto:masshiddiq@yahoo.co.id" target="_blank" title="Kirim surel">
+              <i class="fas fa-envelope fa-fw"></i>
+            </a>
           </div>
         </div>
       </div>
       <div class="base">
         <div class="card">
-          <img src="resources/avi.jpg" alt="Avi">
+          <img src="resources/avi.jpg" alt="Avi" title="Muhammad Avi Majid Kaaffah">
           <h3>Muhammad Avi Majid Kaaffah</h3>
-          <p class="about">Web Design Hobbyist</p>
-          <p class="testimonial">Menurut saya, program DTS bersama Progate ini sangat menyenangkan. Saya mendapatkan pengalaman baru, pemahaman baru, dan tentunya banyak kenalan baru di sini. Top!</p>
-          <a href="https://github.com/avikaaffah" target="_blank" class="button">
+          <p class="about">Anak Muda</p>
+          <p class="testimonial">Sungguh kesempatan yang tidak boleh dilewatkan. DTS memberikan segudang ilmu gratis di program Online Academy. Belajar di rumah jadi semakin seru! #dirumahaja</p>
+          <a href="https://github.com/avikaaffah" target="_blank" class="button" title="Akses Github Avi">
             <i class="fab fa-github fa-fw"></i> GitHub
           </a>
           <div class="medsos">
-            <a href="#" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a>
-            <a href="#" target="_blank"><i class="fas fa-envelope fa-fw"></i></a>
+            <a href="https://www.linkedin.com/in/avikaaffah/" target="_blank" title="LinkedIn Avi">
+              <i class="fab fa-linkedin fa-fw"></i>
+            </a>
+            <a href="mailto:avikaaffah@gmail.com" target="_blank" title="Kirim surel">
+              <i class="fas fa-envelope fa-fw"></i>
+            </a>
           </div>
         </div>
       </div>
     </div>
-  </article>
+  </section>
 
-  <div class="portfolio">
+  <!-- di sini untuk bagian portfolio -->
+
+  <section id="portfolio">
     <div class="container">
-      <h2>Portfolio kami</h2>
-      <div class="kotak">
-        <div class="dalam"><img src="resources/dts.png" alt="dts"></div>
-        <div class="dalam">
+      <h2>Portofolio Kami</h2>
+      <div class="wrap">
+        <div class="image">
+          <img src="resources/website.jpg" alt="Website" title="Website Tim">
+        </div>
+        <div class="caption">
+          <h3>Website Tim</h3>
           <p>Pada sesi pertama, para peserta DTS 2020 mengerjakan proyek tim berupa pembuatan halaman website dari HTML dan CSS yang telah dipelajari sebelumnya melalui modul pembelajaran di Progate.</p>
-          <div class=tombol>
-          <a href="">Akses Halaman</a>
-          <p>Lihat di GitHub</p>
-          </div>
+          <a href="./" class="button" title="Lihat hasil dari proyek ini">
+            Akses<span class="non-mobile-only">
+              Halaman
+            </span>
+          </a>
+          <a href="https://github.com/moefc32/F25_DTS20" target="_blank" class="github" title="Lihat repository dari proyek ini">
+            <span class="non-mobile-only">
+              <i class="fab fa-github fa-fw"></i>
+            </span>Lihat di GitHub
+          </a>
         </div>
       </div>
-      
     </div>
-  </div>
+  </section>
+
+  <!-- di sini untuk bagian call to action -->
 
   <section class="cta">
-    <!-- di sini untuk bagian call to action -->
+    <div class="container">
+      <p>Tertarik untuk mengikuti program ini? Akses infonya sekarang!</p>
+      <a href="https://t.me/DTS2019Kominfo" target="_blank" class="button" title="Menuju official channel dari DTS Kominfo">
+        <i class="fab fa-telegram-plane fa-fw"></i> Telegram Channel
+      </a>
+    </div>
   </section>
 
-  <section class="organizer">
-    <!-- di sini untuk bagian organizer -->
+  <!-- di sini untuk bagian organizer -->
+
+  <section id="organizer">
+    <div class="container">
+      <h2>Program hebat ini diselenggarakan oleh :</h2>
+      <a href="https://digitalent.kominfo.go.id" target="_blank" title="DTS Kominfo">
+        <img src="resources/dts.png" alt="DTS Kominfo">
+      </a>
+      <a href="https://progate.com" target="_blank">
+        <img src="resources/progate.png" alt="Progate" title="Progate Indonesia">
+      </a>
+    </div>
   </section>
 
-  <footer class="footer">
-    <!-- di sini untuk bagian footer -->
+  <!-- di sini untuk bagian footer -->
+
+  <footer>
+    <div class="container">
+      <p class="left">
+        <i class="fas fa-external-link-alt non-mobile-only" style="margin-right: 15px;"></i>
+        <a href="https://digitalent.kominfo.go.id" target="_blank">
+          DTS Kominfo
+        </a><span>|</span>
+        <a href="https://progate.com" target="_blank">
+          Progate Indonesia
+        </a>
+        <span class="non-mobile-only">|</span>
+        <a href="https://github.com" target="_blank" class="non-mobile-only">
+          GitHub
+        </a>
+      </p>
+      <p class="right">
+        F25_DTS20 <span>&copy;</span> 2020
+      </p>
+    </div>
   </footer>
+  <a onclick="scrollLink('landing')" title="Kembali ke atas">
+    <div id="to-top">
+      <i class="fas fa-chevron-up fa-fw"></i>
+    </div>
+  </a>
+  <script src="resources/script.js"></script>
 </body>
 </html>
