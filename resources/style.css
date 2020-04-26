@@ -134,7 +134,7 @@ header .header-right {
   text-align: right;
 }
 
-header #menuToggle {
+header #menu-toggle {
   position: absolute;
   display: block;
   width: 1.75em;
@@ -147,7 +147,7 @@ header #menuToggle {
   -webkit-touch-callout: none;
 }
 
-header #menuToggle:checked ~ .scroll {
+header #menu-toggle:checked ~ .scroll {
   top: 70px;
   left: 0;
 }
@@ -587,7 +587,7 @@ footer .right span {
   }
 
   #organizer img {
-    display: inline;
+    display: inline-block;
     max-width: initial;
     margin: 0 50px;
   }

@@ -19,7 +19,7 @@ function findPos(obj) {
 
 const scrollLink = (id)=> {
   var a = document.getElementById(id);
-  window.scroll(0,findPos(a) - 120);
-  var elm = document.getElementById('menuToggle');
+  window.scroll(0, findPos(a) - 120);
+  var elm = document.getElementById('menu-toggle');
   if (elm.checked = true) {elm.click();}
 }
