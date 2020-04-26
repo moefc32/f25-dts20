@@ -42,6 +42,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
   line-height: 1.618em;
+  background-color: #e8f5e9;
   color: #424242;
 }
 
@@ -61,7 +62,7 @@ img {
 
 .container h2 {
   margin: 0 auto;
-  padding: 70px 30px 50px;
+  padding: 0 30px 50px;
   font-size: 2.5em;
   line-height: 1.618em;
 }
@@ -133,7 +134,7 @@ header .header-right {
   text-align: right;
 }
 
-header input {
+header #menuToggle {
   position: absolute;
   display: block;
   width: 1.75em;
@@ -146,7 +147,7 @@ header input {
   -webkit-touch-callout: none;
 }
 
-header input:checked ~ .scroll {
+header #menuToggle:checked ~ .scroll {
   top: 70px;
   left: 0;
 }
@@ -235,8 +236,7 @@ header .header-right a:hover {
 /* bagian lesson di sini */
 
 #lesson {
-  padding-bottom: 50px;
-  background-color: #e8f5e9;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -293,7 +293,7 @@ header .header-right a:hover {
 /* bagian profil di sini */
 
 #profile {
-  background-color: #e8f5e9;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -377,8 +377,7 @@ header .header-right a:hover {
 /* bagian portfolio di sini */
 
 #portfolio {
-  padding-bottom: 50px;
-  background-color: #e8f5e9;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -450,6 +449,7 @@ header .header-right a:hover {
 /* bagian call to action di sini */
 
 .cta {
+  margin-bottom: 50px;
   background: linear-gradient(135deg, #2f80ed 0%, #56ccf2 100%);
   color: #fff;
   text-align: center;
@@ -492,8 +492,7 @@ header .header-right a:hover {
 /* bagian organizer di sini */
 
 #organizer {
-  padding-bottom: 100px;
-  background-color: #e8f5e9;
+  margin-bottom: 100px;
   text-align: center;
 }
 

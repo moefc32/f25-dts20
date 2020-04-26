@@ -7,7 +7,19 @@ window.onscroll = function scrollFunction() {
   }
 }
 
+function findPos(obj) {
+  var curtop = 0;
+  if (obj.offsetParent) {
+    do {
+      curtop += obj.offsetTop;
+    } while (obj = obj.offsetParent);
+    return [curtop];
+  }
+}
+
 const scrollLink = (id)=> {
   var a = document.getElementById(id);
-  a.scrollIntoView({behavior: 'smooth'});
+  window.scroll(0,findPos(a) - 120);
+  var elm = document.getElementById('menuToggle');
+  if (elm.checked = true) {elm.click();}
 }

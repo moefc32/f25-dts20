@@ -21,24 +21,22 @@
         </p>
       </div>
       <div class="header-right">
-        <div id="menuToggle">
-          <input type="checkbox" class="mobile-only">
-          <i class="fas fa-bars fa-fw hamburger mobile-only"></i>
-          <ul class="scroll">
-            <a onclick="scrollLink('lesson')">
-              <li>Materi</li>
-            </a>
-            <a onclick="scrollLink('profile')">
-              <li>Anggota Tim</li>
-            </a>
-            <a onclick="scrollLink('portfolio')">
-              <li>Portofolio</li>
-            </a>
-            <a onclick="scrollLink('organizer')">
-              <li>Penyelenggara</li>
-            </a>
-          </ul>
-        </div>
+        <input type="checkbox" class="mobile-only"  id="menuToggle">
+        <i class="fas fa-bars fa-fw hamburger mobile-only"></i>
+        <ul class="scroll">
+          <a onclick="scrollLink('lesson')">
+            <li>Materi</li>
+          </a>
+          <a onclick="scrollLink('profile')">
+            <li>Anggota Tim</li>
+          </a>
+          <a onclick="scrollLink('portfolio')">
+            <li>Portofolio</li>
+          </a>
+          <a onclick="scrollLink('organizer')">
+            <li>Penyelenggara</li>
+          </a>
+        </ul>
       </div>
     </div>
   </header>
@@ -241,7 +239,7 @@
       </p>
     </div>
   </footer>
-  <a onclick="scrollLanding()">
+  <a onclick="scrollLink('landing')">
     <div id="to-top">
       <i class="fas fa-chevron-up fa-fw"></i>
     </div>
