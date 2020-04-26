@@ -457,6 +457,7 @@ header .header-right a:hover {
 
 .cta p {
   display: inline-block;
+  width: 100%;
   margin: 0 0 15px 0;
   vertical-align: top;
   font-size: 1.4em;
@@ -465,7 +466,7 @@ header .header-right a:hover {
 
 .cta .button {
   display: inline-block;
-  margin: 0;
+  margin: 0 auto;
   padding: 5px 15px;
   line-height: 35px;
   background-color: #08c;
@@ -629,6 +630,7 @@ footer .right span {
   }
 
   .cta p {
+    width: auto;
     margin: 0 50px 0 0;
     line-height: 50px;
   }
