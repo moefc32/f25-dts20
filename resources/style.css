@@ -32,6 +32,10 @@
   outline: none !important;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -71,6 +75,21 @@ img {
   padding: 15px;
 }
 
+#to-top {
+  position: fixed;
+  bottom: 30px;
+  right: -70px;
+  width: 2em;
+  line-height: 2em;
+  font-size: 2em;
+  text-align: center;
+  background-color: #2f80ed;
+  color: #fff;
+  opacity: .75;
+  border-radius: 50%;
+  transition: .25s all;
+}
+
 /* bagian navigasi di sini */
 
 header {
@@ -97,20 +116,20 @@ header .logo {
   font-weight: bold;
 }
 
-.header-left {
+header .header-left {
   float: left;
 }
 
-.header-left a {
+header .header-left a {
   color: #fff;
 }
 
-.header-right {
+header .header-right {
   float: right;
   text-align: right;
 }
 
-.header-right input {
+header input {
   position: absolute;
   display: block;
   width: 1.75em;
@@ -123,17 +142,17 @@ header .logo {
   -webkit-touch-callout: none;
 }
 
-.header-right input:checked ~ .scroll {
+header input:checked ~ .scroll {
   top: 70px;
   left: 0;
 }
 
-.header-right .hamburger {
+header .hamburger {
   margin-right: 30px;
   font-size: 1.5em;
 }
 
-.header-right .scroll {
+header .scroll {
   position: absolute;
   top: -280px;
   left: 0;
@@ -147,7 +166,7 @@ header .logo {
   border-top: solid 1px #888;
 }
 
-.header-right a {
+header .header-right a {
   display: block;
   margin: 0;
   padding: 0 25px;
@@ -156,14 +175,14 @@ header .logo {
   color: #fff;
 }
 
-.header-right a:hover {
+header .header-right a:hover {
   background-color: rgba(255,255,255,.5);
 }
 
 /* bagian landing di sini */
 
 #landing {
-  padding-top: 25vh;
+  padding-top: 20vh;
   height: calc(100vh + 70px);
   background: linear-gradient(135deg, #8360c3 0%, #2ebf91 100%);
   line-height: 100vh;
@@ -468,7 +487,7 @@ header .logo {
 /* bagian organizer di sini */
 
 #organizer {
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   background-color: #e8f5e9;
   text-align: center;
 }
@@ -540,14 +559,14 @@ footer .right span {
     display: initial !important;
   }
 
-  .header-right .scroll {
+  header .scroll {
     position: static;
     width: auto;
     background: none;
     border: none;
   }
 
-  .header-right a {
+  header .header-right a {
     display: inline-block;
   }
 
@@ -585,7 +604,7 @@ footer .right span {
 
   #landing {
     min-height: 700px;
-    padding-top: 200px;
+    padding-top: 180px;
     background: url(blob.png) 50vw center no-repeat, linear-gradient(135deg, #8360c3 0%, #2ebf91 100%);
   }
 

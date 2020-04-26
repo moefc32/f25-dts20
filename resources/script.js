@@ -1,3 +1,17 @@
+var mybutton = document.getElementById("to-top");
+
+window.onscroll = function() {
+  scrollFunction()
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    mybutton.style.right = "30px";
+  } else {
+    mybutton.style.right = "-70px";
+  }
+}
+
 function scrollLanding() {
   document.querySelector('#landing').scrollIntoView({
     behavior: 'smooth'
