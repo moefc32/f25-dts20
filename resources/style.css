@@ -547,6 +547,8 @@ footer .right span {
   margin: 0 5px;
 }
 
+/* tablet screen view */
+
 @media (min-width: 768px) {
   body {
     font-size: 16px;
@@ -602,6 +604,8 @@ footer .right span {
   }
 }
 
+/* desktop screen view */
+
 @media (min-width: 992px) {
   .container {
     width: 970px;
@@ -639,6 +643,8 @@ footer .right span {
     line-height: 50px;
   }
 }
+
+/* large desktop screen view */
 
 @media (min-width: 1200px) {
   .container {
