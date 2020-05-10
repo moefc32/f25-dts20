@@ -19,7 +19,7 @@
 	user-select: none;
 }
 
-#display:disabled {
+#display {
 	float: left;
 	width: calc(100% - 10px);
 	margin: 15px 5px;
