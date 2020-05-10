@@ -4,19 +4,19 @@
 	align-items: center;
 	width: 100%;
 	height: 100vh;
-	background:	#55b9f3;
+	background:	#fafafa;
 	flex-wrap: wrap;
 }
 
 .calc {
-	width: 280px;
-	height: 380px;
+	width: 260px;
+	height: 360px;
 	padding: 10px;
-	border-radius: 30px;
-	background:	#55b9f3;
-  line-height: 1em;
-	box-shadow: 2px 2px 5px #489dcf,
-				-2px -2px 5px #62d5ff;
+	border-radius: 15px;
+	background:	#eceff1;
+	line-height: 1em;
+  box-shadow: 5px 5px #9e9e9e;
+	user-select: none;
 }
 
 #display {
@@ -27,10 +27,10 @@
 	font-size: 38px;
 	line-height: 70px;
 	text-align: right;
-	border-radius: 15px;
-	background:	#55b9f3;
-	box-shadow: inset 2px 2px 5px #489dcf,
-				inset -2px -2px 5px #62d5ff;
+	border-radius: 5px 15px;
+	background:	#23a1ff;
+	box-shadow: inset 2px 2px 5px #1e89d9,
+	inset -2px -2px 5px #28b9ff;
 	border: none;
 }
 
@@ -39,12 +39,14 @@
 .button-c,
 .button-d {
 	float: left;
-	width: calc(20% - 10px);
-	margin: 5px;
+	width: calc(20% - 4px);
+	margin: 2px;
 	line-height: 50px;
+	font-size: 1em;
 	text-align: center;
-  color: #424242;
-	border-radius: 15px;
+	color: #424242;
+	border-radius: 5px 15px;
+	box-shadow: 0 0 2px #ddd;
 }
 
 .new-row {
@@ -52,47 +54,39 @@
 }
 
 .button-a {
-	background:	linear-gradient(145deg, #5bc6ff, #4da7db);
-	box-shadow: 2px 2px 5px #489dcf,
-				-2px -2px 5px #62d5ff;
+	background:	linear-gradient(145deg, #fdffff, #d4d7d9);
 }
 
 .button-a:active {
-	background:	linear-gradient(145deg, #4da7db, #5bc6ff);
+	background:	linear-gradient(145deg, #d4d7d9, #fdffff);
 	color: #666;
 }
 
 .button-b {
-	background:	linear-gradient(145deg, #5bc6ff, #4da7db);
-	box-shadow: 2px 2px 5px #489dcf,
-				-2px -2px 5px #62d5ff;
+	background:	linear-gradient(145deg, #6bc2ff, #5aa3dd);
 }
 
 .button-b:active {
-	background:	linear-gradient(145deg, #4da7db, #5bc6ff);
+	background:	linear-gradient(145deg, #5aa3dd, #6bc2ff);
 	color: #666;
 }
 
 .button-c {
-	background:	linear-gradient(145deg, #5bc6ff, #4da7db);
-	box-shadow: 2px 2px 5px #489dcf,
-				-2px -2px 5px #62d5ff;
+	background:	linear-gradient(145deg, #fff0be, #e6caa0);
 }
 
 .button-c:active {
-	background:	linear-gradient(145deg, #4da7db, #5bc6ff);
+	background:	linear-gradient(145deg, #e6caa0, #fff0be);
 	color: #666;
 }
 
 .button-d {
-	line-height: 110px;
-	margin-bottom: -65px;
-	background:	linear-gradient(145deg, #5bc6ff, #4da7db);
-	box-shadow: 2px 2px 5px #489dcf,
-				-2px -2px 5px #62d5ff;
+	line-height: 104px;
+	margin-bottom: -54px;
+	background:	linear-gradient(145deg, #ffa300, #e68900);
 }
 
 .button-d:active {
-	background:	linear-gradient(145deg, #4da7db, #5bc6ff);
+	background:	linear-gradient(145deg, #e68900, #ffa300);
 	color: #666;
 }
