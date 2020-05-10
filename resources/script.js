@@ -20,7 +20,10 @@ function findPos(item) {
 
 const scrollLink = (id)=> {
   var a = document.getElementById(id);
-  window.scroll(0, findPos(a) - 120);
+  window.scroll({
+    top: findPos(a) - 120,
+    behavior: 'smooth'
+  });
   var elm = document.getElementById('menu-toggle');
   if (elm.checked = true) {elm.click();}
 }
