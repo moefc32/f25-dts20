@@ -19,6 +19,39 @@
   </script>
 </head>
 <body>
+
+  <!-- di sini untuk bagian navigasi -->
+
+  <header>
+    <div class="container">
+      <div class="header-left">
+        <p class="logo">
+          <a href="./">F25_DTS20</a>
+        </p>
+      </div>
+      <div class="header-right">
+        <input type="checkbox" class="mobile-only" id="menu-toggle">
+        <i class="fas fa-bars fa-fw hamburger mobile-only"></i>
+        <ul class="scroll">
+          <a onclick="scrollLink('lesson')">
+            <li>Materi</li>
+          </a>
+          <a onclick="scrollLink('profile')">
+            <li>Anggota Tim</li>
+          </a>
+          <a onclick="scrollLink('portfolio')">
+            <li>Portofolio</li>
+          </a>
+          <a onclick="scrollLink('organizer')">
+            <li>Penyelenggara</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- di sini untuk bagian kalkulator -->
+
 	<div class="base">
 		<div class="calc">
 			<input type="text" value="0" disabled id="display">
@@ -44,6 +77,14 @@
 		</div>
 	</div>
 
+  <!-- tombol back to top -->
+
+	<a onclick="scrollLink('landing')" title="Kembali ke atas">
+		<div id="to-top">
+			<i class="fas fa-chevron-up fa-fw"></i>
+		</div>
+	</a>
 	<script src="../resources/script.js"></script>
+	<script src="../resources/calculator.js"></script>
 </body>
 </html>
