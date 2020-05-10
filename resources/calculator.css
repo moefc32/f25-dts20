@@ -39,7 +39,8 @@
 .button-a,
 .button-b,
 .button-c,
-.button-d {
+.button-d,
+.button-e {
 	float: left;
 	width: calc(20% - 4px);
 	margin: 2px;
@@ -47,6 +48,7 @@
 	font-size: 1em;
 	text-align: center;
 	color: #424242;
+	font-size: 1.15em;
 	border-radius: 5px 15px;
 	box-shadow: 0 0 2px #ddd;
 }
@@ -65,31 +67,40 @@
 }
 
 .button-b {
-	background:	linear-gradient(145deg, #6bc2ff, #5aa3dd);
+	background:	linear-gradient(145deg, #c8eeff, #a8c8e2);
 }
 
 .button-b:active {
-	background:	linear-gradient(145deg, #5aa3dd, #6bc2ff);
+	background:	linear-gradient(145deg, #a8c8e2, #c8eeff);
 	color: #666;
 }
 
 .button-c {
-	font-size: .8em;
-	background:	linear-gradient(145deg, #fff0be, #e6caa0);
+	background:	linear-gradient(145deg, #6bc2ff, #5aa3dd);
 }
 
 .button-c:active {
-	background:	linear-gradient(145deg, #e6caa0, #fff0be);
+	background:	linear-gradient(145deg, #5aa3dd, #6bc2ff);
 	color: #666;
 }
 
 .button-d {
+	font-size: 1em;
+	background:	linear-gradient(145deg, #fff0be, #e6caa0);
+}
+
+.button-d:active {
+	background:	linear-gradient(145deg, #e6caa0, #fff0be);
+	color: #666;
+}
+
+.button-e {
 	line-height: 104px;
 	margin-bottom: -54px;
 	background:	linear-gradient(145deg, #ffa300, #e68900);
 }
 
-.button-d:active {
+.button-e:active {
 	background:	linear-gradient(145deg, #e68900, #ffa300);
 	color: #666;
 }
