@@ -39,10 +39,10 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   line-height: 1.618em;
-  background-color: #e8f5e9;
+  background: #e8f5e9;
   color: #424242;
 }
 
@@ -84,7 +84,7 @@ img {
   line-height: 2em;
   font-size: 2em;
   text-align: center;
-  background-color: #2f80ed;
+  background: #2f80ed;
   color: #fff;
   opacity: .75;
   border-radius: 50%;
@@ -104,7 +104,7 @@ header {
   width: 100%;
   line-height: 0;
   color: #fff;
-  background-color: rgba(34,49,52,.9);
+  background: rgba(34,49,52,.9);
 }
 
 header .container {
@@ -167,7 +167,7 @@ header .scroll {
   padding: 0;
   list-style: none;
   transition: .25s all;
-  background-color: rgba(34,49,52,.9);
+  background: rgba(34,49,52,.9);
   border-top: solid 1px #888;
 }
 
@@ -181,7 +181,7 @@ header .header-right a {
 }
 
 header .header-right a:hover {
-  background-color: rgba(255,255,255,.5);
+  background: rgba(255,255,255,.5);
 }
 
 /* bagian landing di sini */
@@ -213,14 +213,14 @@ header .header-right a:hover {
 
 #landing .button {
   padding: 15px 30px;
-  background-color: #2ebf91;
+  background: #2ebf91;
   color: #fff;
   border-radius: 50px;
   box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
 }
 
 #landing .button:hover {
-  background-color: #fbc02d;
+  background: #fbc02d;
 }
 
 #landing .people {
@@ -243,7 +243,7 @@ header .header-right a:hover {
 #lesson .over {
   margin-top: -50px;
   padding: 50px 0;
-  background-color: #fff;
+  background: #fff;
   border-radius: 50px;
   box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
 }
@@ -260,17 +260,17 @@ header .header-right a:hover {
 }
 
 #lesson .html {
-  background-color: #f06529;
+  background: #f06529;
   color: #fff;
 }
 
 #lesson .css {
-  background-color: #2965f1;
+  background: #2965f1;
   color: #fff;
 }
 
 #lesson .js {
-  background-color: #f0db4f;
+  background: #f0db4f;
   color: #424242;
 }
 
@@ -301,7 +301,7 @@ header .header-right a:hover {
   display: inline-block;
   padding: 30px;
   vertical-align: top;
-  background-color: #fff;
+  background: #fff;
   border-radius: 15px;
   box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
 }
@@ -339,7 +339,7 @@ header .header-right a:hover {
   margin: 15px 0 15px;
   padding: 5px 15px;
   line-height: 35px;
-  background-color: #222;
+  background: #222;
   color: #fff;
   border-radius: 5px;
   box-shadow: 0 5px #666;
@@ -347,7 +347,7 @@ header .header-right a:hover {
 }
 
 #profile .button:hover {
-  background-color: #444;
+  background: #444;
 }
 
 #profile .button:active {
@@ -384,7 +384,7 @@ header .header-right a:hover {
 #portfolio .wrap {
   display: inline-block;
   margin-top: 15px;
-  background-color: #fff;
+  background: #fff;
   text-align: left;
   box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
 }
@@ -412,7 +412,7 @@ header .header-right a:hover {
   margin: 15px 0 15px;
   padding: 5px 15px;
   line-height: 35px;
-  background-color: #2ebf91;
+  background: #2ebf91;
   color: #fff;
   border-radius: 5px;
   box-shadow: 0 5px #228c6a;
@@ -420,7 +420,7 @@ header .header-right a:hover {
 }
 
 #portfolio .button:hover {
-  background-color: #28a67e;
+  background: #28a67e;
 }
 
 #portfolio .button:active {
@@ -474,7 +474,7 @@ header .header-right a:hover {
   margin: 0 auto;
   padding: 5px 15px;
   line-height: 35px;
-  background-color: #08c;
+  background: #08c;
   color: #fff;
   border-radius: 5px;
   box-shadow: 0 5px #069;
@@ -482,7 +482,7 @@ header .header-right a:hover {
 }
 
 .cta .button:hover {
-  background-color: #07b;
+  background: #07b;
 }
 
 .cta .button:active {
@@ -518,7 +518,7 @@ header .header-right a:hover {
 /* bagian footer di sini */
 
 footer {
-  background-color: #353a40;
+  background: #353a40;
   color: #fff;
   text-align: center;
   line-height: 0;
