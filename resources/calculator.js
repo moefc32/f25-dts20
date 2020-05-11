@@ -19,11 +19,11 @@ const number = (val)=> {
     if (currentNumber === '0') {
       currentNumber = val;
       updateScreen(currentNumber);
-      console.log(currentNumber);
+      updateLog(currentNumber);
     } else {
       currentNumber += val;
       updateScreen(currentNumber);
-      console.log(currentNumber);
+      updateLog(currentNumber);
     }
   }
 }
@@ -33,18 +33,18 @@ const operator = (val)=> {
     case 'clear':
       currentNumber = '0';
       updateScreen(currentNumber);
-      console.log('hapus semua');
+      updateLog('hapus semua');
       break;
 
     case 'delete':
       if (currentNumber.length > 1) {
         currentNumber = currentNumber.slice(0, -1);
         updateScreen(currentNumber);
-        console.log(currentNumber);
+        updateLog(currentNumber);
       } else {
         currentNumber = '0';
         updateScreen(currentNumber);
-        console.log(currentNumber);
+        updateLog(currentNumber);
       }
       break;
 
@@ -53,11 +53,11 @@ const operator = (val)=> {
       if (currentNumber === '0') {
         currentNumber = '0.';
         updateScreen(currentNumber);
-        console.log(currentNumber);
+        updateLog(currentNumber);
       } else {
         currentNumber += val;
         updateScreen(currentNumber);
-        console.log(currentNumber);
+        updateLog(currentNumber);
       }
       break;
 
@@ -65,28 +65,28 @@ const operator = (val)=> {
       math = val;
       prevNumber = currentNumber;
       currentNumber = '0';
-      console.log('ditambah');
+      updateLog('ditambah');
       break;
 
     case '-':
       math = val;
       prevNumber = currentNumber;
       currentNumber = '0';
-      console.log('dikurang');
+      updateLog('dikurang');
       break;
 
     case '*':
       math = val;
       prevNumber = currentNumber;
       currentNumber = '0';
-      console.log('dikali');
+      updateLog('dikali');
       break;
 
     case '/':
       math = val;
       prevNumber = currentNumber;
       currentNumber = '0';
-      console.log('dibagi');
+      updateLog('dibagi');
       break;
 
     default:
@@ -119,5 +119,5 @@ const equal = ()=> {
 
   currentNumber = result.toString();
   updateScreen(currentNumber);
-  console.log('sama dengan ' + currentNumber);
+  updateLog('sama dengan ' + currentNumber);
 }
