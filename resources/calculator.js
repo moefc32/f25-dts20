@@ -41,29 +41,43 @@ const operator = (val)=> {
       updateScreen(currentNumber);
       updateLog('all clear');
       break;
-    case 'delete':
 
+    case 'delete':
+      if (currentNumber.length > 1) {
+        currentNumber = currentNumber.slice(0, -1);
+        updateScreen(currentNumber);
+        updateLog(currentNumber);
+      } else {
+        currentNumber = '0';
+        updateScreen(currentNumber);
+        updateLog(currentNumber);
+      }
       break;
+
     case '+':
       math = '+';
       prevNumber = currentNumber;
       currentNumber = '0';
       break;
+
     case '-':
       math = '-';
       prevNumber = currentNumber;
       currentNumber = '0';
       break;
+
     case '*':
       math = '*';
       prevNumber = currentNumber;
       currentNumber = '0';
       break;
+
     case '/':
       math = '/';
       prevNumber = currentNumber;
       currentNumber = '0';
       break;
+
     default:
       return;
   }
@@ -75,15 +89,19 @@ const equal = ()=> {
     case '+':
       result = prevNumber + currentNumber;
       break;
+
     case '-':
       result = prevNumber - currentNumber;
       break;
+
     case '*':
       result = prevNumber * currentNumber;
       break;
+
     case '/':
       result = prevNumber / currentNumber;
       break;
+      
     default:
       return;
   }
