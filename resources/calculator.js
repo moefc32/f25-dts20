@@ -4,6 +4,7 @@ const calculatorLog = document.querySelector('#log');
 let prevNumber;
 let calculationOperator;
 let currentNumber = '0';
+let math;
 
 const updateScreen = (val)=> {
   calculatorScreen.value = val;
@@ -34,15 +35,60 @@ const number = (val)=> {
 }
 
 const operator = (val)=> {
-  if (val === 'clear') {
-    currentNumber = '0';
-    updateScreen(currentNumber);
-    updateLog('all clear');
-  } else {
-    prevNumber = currentNumber;
-    calculationOperator = val;
-    currentNumber = "0";
-    updateScreen(currentNumber);
-    updateLog(currentNumber);
+  switch (val) {
+    case 'clear':
+      currentNumber = '0';
+      updateScreen(currentNumber);
+      updateLog('all clear');
+      break;
+    case 'delete':
+
+      break;
+    case '+':
+      math = '+';
+      prevNumber = currentNumber;
+      currentNumber = '0';
+      break;
+    case '-':
+      math = '-';
+      prevNumber = currentNumber;
+      currentNumber = '0';
+      break;
+    case '*':
+      math = '*';
+      prevNumber = currentNumber;
+      currentNumber = '0';
+      break;
+    case '/':
+      math = '/';
+      prevNumber = currentNumber;
+      currentNumber = '0';
+      break;
+    default:
+      return;
   }
+}
+
+const equal = ()=> {
+  let result;
+  switch (math) {
+    case '+':
+      result = prevNumber + currentNumber;
+      break;
+    case '-':
+      result = prevNumber - currentNumber;
+      break;
+    case '*':
+      result = prevNumber * currentNumber;
+      break;
+    case '/':
+      result = prevNumber / currentNumber;
+      break;
+    default:
+      return;
+  }
+
+  currentNumber = result;
+  updateScreen(currentNumber);
+  updateLog(currentNumber);
 }
