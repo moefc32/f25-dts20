@@ -35,34 +35,36 @@
 
   <!-- di sini untuk bagian kalkulator -->
 
-	<div class="base">
-		<div class="calc">
-			<input type="text" value="1234567890" readonly id="display">
-			<a class="button-a">7</a>
-			<a class="button-a">8</a>
-			<a class="button-a">9</a>
-			<a class="button-c">/</a>
-			<a class="button-d">AC</a>
-			<a class="button-a new-row">4</a>
-			<a class="button-a">5</a>
-			<a class="button-a">6</a>
-			<a class="button-c">*</a>
-			<a class="button-d">Del</a>
-			<a class="button-a new-row">1</a>
-			<a class="button-a">2</a>
-			<a class="button-a">3</a>
-			<a class="button-c">-</a>
-			<a class="button-e">=</a>
-			<a class="button-a new-row">0</a>
-			<a class="button-b">,</a>
-			<a class="button-b">%</a>
-			<a class="button-c">+</a>
-		</div>
-	</div>
+  <section id="top">
+    <div class="base">
+      <div class="calc">
+        <input type="text" value="1234567890" readonly id="display">
+        <a onclick="number('7')" class="button-a">7</a>
+        <a onclick="number('8')" class="button-a">8</a>
+        <a onclick="number('9')" class="button-a">9</a>
+        <a onclick="operation('/')" class="button-c">/</a>
+        <a onclick="operation('clear')" class="button-d">AC</a>
+        <a onclick="number('4')" class="button-a new-row">4</a>
+        <a onclick="number('5')" class="button-a">5</a>
+        <a onclick="number('6')" class="button-a">6</a>
+        <a onclick="operation('*')" class="button-c">*</a>
+        <a onclick="operation('delete')" class="button-d">Del</a>
+        <a onclick="number('1')" class="button-a new-row">1</a>
+        <a onclick="number('2')" class="button-a">2</a>
+        <a onclick="number('3')" class="button-a">3</a>
+        <a onclick="operation('-')" class="button-c">-</a>
+        <a onclick="operation('equal')" class="button-e">=</a>
+        <a onclick="number('0')" class="button-a new-row">0</a>
+        <a onclick="operation(',')" class="button-b">,</a>
+        <a onclick="operation('%')" class="button-b">%</a>
+        <a onclick="operation('+')" class="button-c">+</a>
+      </div>
+    </div>
+  </section>
 
   <!-- tombol back to top -->
 
-	<a onclick="scrollLink('landing')" title="Kembali ke atas">
+	<a onclick="scrollLink('top')" title="Kembali ke atas">
 		<div id="to-top">
 			<i class="fas fa-chevron-up fa-fw"></i>
 		</div>
