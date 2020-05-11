@@ -17,19 +17,13 @@ const updateLog = (val)=> {
 const number = (val)=> {
   if (currentNumber.length < 10) {
     if (currentNumber === '0') {
-      if (val === '.') {
-        currentNumber = '0.';
-        updateScreen(currentNumber);
-        updateLog(currentNumber);
-      } else {
-        currentNumber = val;
-        updateScreen(currentNumber);
-        updateLog(currentNumber);
-      }
+      currentNumber = val;
+      updateScreen(currentNumber);
+      console.log(currentNumber);
     } else {
       currentNumber += val;
       updateScreen(currentNumber);
-      updateLog(currentNumber);
+      console.log(currentNumber);
     }
   }
 }
@@ -39,43 +33,60 @@ const operator = (val)=> {
     case 'clear':
       currentNumber = '0';
       updateScreen(currentNumber);
-      updateLog('all clear');
+      console.log('hapus semua');
       break;
 
     case 'delete':
       if (currentNumber.length > 1) {
         currentNumber = currentNumber.slice(0, -1);
         updateScreen(currentNumber);
-        updateLog(currentNumber);
+        console.log(currentNumber);
       } else {
         currentNumber = '0';
         updateScreen(currentNumber);
-        updateLog(currentNumber);
+        console.log(currentNumber);
+      }
+      break;
+
+    case '.':
+      if (currentNumber.includes('.')) { return; }
+      if (currentNumber === '0') {
+        currentNumber = '0.';
+        updateScreen(currentNumber);
+        console.log(currentNumber);
+      } else {
+        currentNumber += val;
+        updateScreen(currentNumber);
+        console.log(currentNumber);
       }
       break;
 
     case '+':
-      math = '+';
+      math = val;
       prevNumber = currentNumber;
       currentNumber = '0';
+      console.log('ditambah');
       break;
 
     case '-':
-      math = '-';
+      math = val;
       prevNumber = currentNumber;
       currentNumber = '0';
+      console.log('dikurang');
       break;
 
     case '*':
-      math = '*';
+      math = val;
       prevNumber = currentNumber;
       currentNumber = '0';
+      console.log('dikali');
       break;
 
     case '/':
-      math = '/';
+      math = val;
       prevNumber = currentNumber;
       currentNumber = '0';
+      console.log('dibagi');
       break;
 
     default:
@@ -87,26 +98,26 @@ const equal = ()=> {
   let result;
   switch (math) {
     case '+':
-      result = parseInt(prevNumber) + parseInt(currentNumber);
+      result = parseFloat(prevNumber) + parseFloat(currentNumber);
       break;
 
     case '-':
-      result = parseInt(prevNumber) - parseInt(currentNumber);
+      result = prevNumber - currentNumber;
       break;
 
     case '*':
-      result = parseInt(prevNumber) * parseInt(currentNumber);
+      result = prevNumber * currentNumber;
       break;
 
     case '/':
-      result = parseInt(prevNumber) / parseInt(currentNumber);
+      result = prevNumber / currentNumber;
       break;
 
     default:
       return;
   }
 
-  currentNumber = result;
+  currentNumber = result.toString();
   updateScreen(currentNumber);
-  updateLog(currentNumber);
+  console.log('sama dengan ' + currentNumber);
 }
