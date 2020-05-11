@@ -18,6 +18,9 @@
     gtag('js', new Date());
     gtag('config', 'UA-131278165-1');
   </script>
+  <script>
+    alert('Halaman ini masih dalam tahap pengembangan!');
+  </script>
 </head>
 <body>
 
@@ -38,27 +41,28 @@
   <section id="top">
     <div class="base">
       <div class="calc">
-        <input type="text" value="1234567890" readonly id="display">
+        <input type="text" id="display" value="0" maxlength="10" readonly>
         <a onclick="number('7')" class="button-a">7</a>
         <a onclick="number('8')" class="button-a">8</a>
         <a onclick="number('9')" class="button-a">9</a>
-        <a onclick="operation('/')" class="button-c">/</a>
-        <a onclick="operation('clear')" class="button-d">AC</a>
+        <a onclick="operator('/')" class="button-c">/</a>
+        <a onclick="operator('clear')" class="button-d">AC</a>
         <a onclick="number('4')" class="button-a new-row">4</a>
         <a onclick="number('5')" class="button-a">5</a>
         <a onclick="number('6')" class="button-a">6</a>
-        <a onclick="operation('*')" class="button-c">*</a>
-        <a onclick="operation('delete')" class="button-d">Del</a>
+        <a onclick="operator('*')" class="button-c">*</a>
+        <a onclick="operator('delete')" class="button-d">Del</a>
         <a onclick="number('1')" class="button-a new-row">1</a>
         <a onclick="number('2')" class="button-a">2</a>
         <a onclick="number('3')" class="button-a">3</a>
-        <a onclick="operation('-')" class="button-c">-</a>
-        <a onclick="operation('equal')" class="button-e">=</a>
+        <a onclick="operator('-')" class="button-c">-</a>
+        <a onclick="operator('equal')" class="button-e">=</a>
         <a onclick="number('0')" class="button-a new-row">0</a>
-        <a onclick="operation(',')" class="button-b">,</a>
-        <a onclick="operation('%')" class="button-b">%</a>
-        <a onclick="operation('+')" class="button-c">+</a>
+        <a onclick="number('.')" class="button-b">.</a>
+        <a onclick="number('%')" class="button-b">%</a>
+        <a onclick="operator('+')" class="button-c">+</a>
       </div>
+      <textarea name="" id="log" cols="30" rows="20" readonly></textarea>
     </div>
   </section>
 

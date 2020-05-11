@@ -104,3 +104,7 @@
 	background:	linear-gradient(145deg, #e68900, #ffa300);
 	color: #666;
 }
+
+#log {
+	margin-left: 50px;
+}
