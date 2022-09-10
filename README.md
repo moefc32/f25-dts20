@@ -1,4 +1,4 @@
-# F25_DTS20
+# F25 DTS20
 
 ![DTS Kominfo](resources/penyelenggara.png)
 
