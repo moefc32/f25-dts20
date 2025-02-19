@@ -229,7 +229,7 @@ header .header-right a:hover {
   margin-right: 15px;
   width: 320px;
   height: 240px;
-  background: url(people.png) center center no-repeat;
+  background: url(people.webp) center center no-repeat;
   animation: shake1 10s infinite;
 }
 
@@ -614,7 +614,7 @@ footer .right span {
   #landing {
     min-height: 700px;
     padding-top: 180px;
-    background: url(blob.png) 50vw center no-repeat, linear-gradient(135deg, #8360c3 0%, #2ebf91 100%);
+    background: url(blob.webp) 50vw center no-repeat, linear-gradient(135deg, #8360c3 0%, #2ebf91 100%);
   }
 
   #landing .intro {
