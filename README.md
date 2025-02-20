@@ -1,8 +1,5 @@
 # F25 DTS20
-<a href="https://opensource.org/license/mit">
-    <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" height="24" />
-</a>
-<br /><br />
+<a href="https://opensource.org/license/mit"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" height="24" /></a>
 
 ![image](https://github.com/user-attachments/assets/252f4ed0-fcb3-4e84-94f7-4ee2de7a64a3)
 
